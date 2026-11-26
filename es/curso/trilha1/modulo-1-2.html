@@ -255,7 +255,7 @@
 <pre class="p-4 text-sm font-mono text-neutral-300 leading-relaxed"><code class="block">---
 name: video-explicativo
 description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
-  HyperFrames) a partir de um assunto — roteiro, narração TTS local,
+  HyperFrames) a partir de um assunto — roteiro, narraçêo TTS local,
   cenas animadas dark premium, captions e CTA do INEMA.CLUB, nos
   formatos 16:9 (YouTube) e 9:16 (Shorts/Reels). Use quando o usuário
   pedir para "fazer um vídeo", "vídeo explicativo", "vídeo sobre X",
@@ -523,14 +523,14 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
    princípio ao avançado, com exemplo real.
 2. **Projeto** — `npx hyperframes init &lt;nome&gt; --example blank`
 3. **Fontes** — `node fetch-fonts.mjs`
-4. **Narração** — gere WAVs com Kokoro, voz `pf_dora`
-5. **Composição** — adapte `composition-template.mjs`
+4. **Narraçêo** — gere WAVs com Kokoro, voz `pf_dora`
+5. **Composiçêo** — adapte `composition-template.mjs`
 6. **Validar** — `npx hyperframes lint`
 7. **Render** — `--quality high`
 
-## Regras de ouro (não-negociáveis)
+## Regras de ouro (nêo-negociáveis)
 - Animar `.scene-inner`, nunca o wrapper `.clip`
-- Fontes locais via `@font-face` (não CDN)
+- Fontes locais via `@font-face` (nêo CDN)
 - Timing vem de AUDIO[] — fonte única de verdade</code></pre>
 </div>
 </div>
@@ -607,7 +607,7 @@ description: Faz coisas...
 </div>
 </div>
 </div>
-<!-- erro 2: indentação YAML -->
+<!-- erro 2: indentaçêo YAML -->
 <div class="rounded-xl border border-dark-600 bg-dark-700/30 overflow-hidden">
 <div class="px-4 py-3 border-b border-dark-600 bg-red-500/10 flex items-center gap-2">
 <span class="text-red-400 font-bold text-sm">ERR 02</span>
@@ -620,7 +620,7 @@ description: Faz coisas...
 name: meu-skill
 description: Texto longo
 que continua aqui
-sem indentação
+sem indentaçêo
 ---</code></pre>
 <p class="text-xs text-neutral-500 mt-2">Una línea sin sangría rompe el YAML multilínea: el parser la interpreta como un campo nuevo.</p>
 </div>
@@ -630,7 +630,7 @@ sem indentação
 name: meu-skill
 description: Texto longo
   que continua aqui
-  com 2 espaços de indentação
+  com 2 espaços de indentaçêo
 ---</code></pre>
 <p class="text-xs text-neutral-500 mt-2">Las líneas de continuación deben tener al menos 2 espacios de sangría.</p>
 </div>

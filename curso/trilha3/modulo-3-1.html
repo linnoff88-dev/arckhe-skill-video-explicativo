@@ -277,7 +277,7 @@
 <pre class="text-sm font-mono text-neutral-300 leading-relaxed"><code>video-explicativo/
 ├── SKILL.md                          ← entrada principal
 ├── scripts/
-│   ├── composition-template.mjs      ← gerador de composição
+│   ├── composition-template.mjs      ← gerador de composiçêo
 │   ├── fetch-fonts.mjs               ← baixa .woff2 subset latin
 │   └── narration-template.sh         ← gera WAVs com Kokoro
 └── references/
@@ -285,7 +285,7 @@
     ├── house-style.md                ← identidade visual dark premium
     └── gotchas.md                    ← armadilhas e correções</code></pre>
 </div>
-<!-- Grid FAZER / NÃO FAZER -->
+<!-- Grid FAZER / NêO FAZER -->
 <div class="grid sm:grid-cols-2 gap-4 mb-5">
 <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-xl p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3 flex items-center space-x-2">
@@ -300,13 +300,13 @@
 </div>
 <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-4">
 <div class="text-red-400 font-semibold text-sm mb-3 flex items-center space-x-2">
-<span>✗</span><span>NÃO FAZER</span>
+<span>✗</span><span>NêO FAZER</span>
 </div>
 <ul class="space-y-2 text-sm text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Editar os scripts diretamente na pasta do skill</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Ignorar os arquivos de referência achando que são opcionais</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Ignorar os arquivos de referência achando que sêo opcionais</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Criar arquivos extras na raiz do projeto (<code class="font-mono text-red-300">index-vertical.html</code>, backups)</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Renomear <code class="font-mono text-red-300">SKILL.md</code> ou mudar sua localização</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Renomear <code class="font-mono text-red-300">SKILL.md</code> ou mudar sua localizaçêo</span></li>
 </ul>
 </div>
 </div>
@@ -357,7 +357,7 @@
 <code class="text-purple-400 font-mono text-sm font-semibold">pipeline.md</code>
 <span class="bg-purple-500/10 text-purple-300 text-xs px-2 py-0.5 rounded-full border border-purple-500/20">Passo a passo</span>
 </div>
-<p class="text-neutral-300 text-sm">O guia operacional completo. Explica em detalhe cada um dos 7 passos do fluxo: estrutura de projeto, como escrever o roteiro, gerar narrações com Kokoro, medir durações com <code class="font-mono text-purple-300">ffprobe</code>, montar a composição e renderizar em dois formatos.</p>
+<p class="text-neutral-300 text-sm">O guia operacional completo. Explica em detalhe cada um dos 7 passos do fluxo: estrutura de projeto, como escrever o roteiro, gerar narrações com Kokoro, medir durações com <code class="font-mono text-purple-300">ffprobe</code>, montar a composiçêo e renderizar em dois formatos.</p>
 </div>
 </div>
 <div class="relative mb-6">
@@ -386,7 +386,7 @@
 <div class="flex items-start space-x-3">
 <span class="text-blue-400 text-lg flex-shrink-0">📊</span>
 <div>
-<div class="text-blue-400 font-semibold text-sm mb-1">Dados do design de divulgação progressiva</div>
+<div class="text-blue-400 font-semibold text-sm mb-1">Dados do design de divulgaçêo progressiva</div>
 <p class="text-neutral-300 text-sm">O <code class="font-mono text-blue-300">SKILL.md</code> aponta para os 3 arquivos de referência via links Markdown relativos. O Claude <strong>nunca carrega todas as referências de uma vez</strong> — ele abre apenas o arquivo que é linkado quando aquele contexto específico é necessário. Isso mantém a janela de contexto leve.</p>
 </div>
 </div>
@@ -439,7 +439,7 @@
 <span class="text-primary text-lg flex-shrink-0">⚡</span>
 <div>
 <div class="text-primary font-semibold text-sm mb-1">Regra de ouro dos scripts</div>
-<p class="text-neutral-300 text-sm">Scripts são templates — não executáveis diretos. Você <strong>copia</strong> para o seu projeto de vídeo (renomeando conforme necessário) e então adapta. O original no skill permanece intocado para o próximo vídeo.</p>
+<p class="text-neutral-300 text-sm">Scripts sêo templates — nêo executáveis diretos. Você <strong>copia</strong> para o seu projeto de vídeo (renomeando conforme necessário) e entêo adapta. O original no skill permanece intocado para o próximo vídeo.</p>
 </div>
 </div>
 </div>
@@ -449,7 +449,7 @@
 <div class="bg-dark-700 border border-purple-500/20 rounded-xl p-4">
 <div class="text-purple-400 text-2xl mb-2">⚙️</div>
 <code class="text-purple-400 font-mono text-xs font-semibold block mb-2">composition-template.mjs</code>
-<p class="text-neutral-400 text-xs leading-relaxed mb-3">Gerador principal da composição HyperFrames. Define <code class="font-mono text-purple-300">AUDIO[]</code> com durações reais, <code class="font-mono text-purple-300">CAPTIONS[]</code>, função <code class="font-mono text-purple-300">sceneN()</code> por cena HTML e <code class="font-mono text-purple-300">anim(i,t)</code> para tweens GSAP.</p>
+<p class="text-neutral-400 text-xs leading-relaxed mb-3">Gerador principal da composiçêo HyperFrames. Define <code class="font-mono text-purple-300">AUDIO[]</code> com durações reais, <code class="font-mono text-purple-300">CAPTIONS[]</code>, funçêo <code class="font-mono text-purple-300">sceneN()</code> por cena HTML e <code class="font-mono text-purple-300">anim(i,t)</code> para tweens GSAP.</p>
 <div class="text-xs text-neutral-500">Copiar como <code class="font-mono text-purple-300">build-index.mjs</code></div>
 </div>
 <!-- fetch-fonts.mjs -->
@@ -492,7 +492,7 @@ for i in 1 2 3 4 5 6 7 8; do
   echo "s$i: ${d}s"
 done</code></pre>
 </div>
-<!-- Grid FAZER / NÃO FAZER -->
+<!-- Grid FAZER / NêO FAZER -->
 <div class="grid sm:grid-cols-2 gap-4 mb-5">
 <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-xl p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3">✓ FAZER com os scripts</div>
@@ -503,11 +503,11 @@ done</code></pre>
 </ul>
 </div>
 <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-4">
-<div class="text-red-400 font-semibold text-sm mb-3">✗ NÃO FAZER com os scripts</div>
+<div class="text-red-400 font-semibold text-sm mb-3">✗ NêO FAZER com os scripts</div>
 <ul class="space-y-2 text-sm text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Usar Google Fonts via CDN (lint falha: <code class="font-mono text-red-300">google_fonts_import</code>)</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Usar durações estimadas em vez das medidas com ffprobe</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Esquecer <code class="font-mono text-red-300">ffmpeg -nostdin</code> no Windows (arquivo não gerado)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Esquecer <code class="font-mono text-red-300">ffmpeg -nostdin</code> no Windows (arquivo nêo gerado)</span></li>
 </ul>
 </div>
 </div>
@@ -559,7 +559,7 @@ done</code></pre>
 <code class="text-purple-400 font-mono text-sm font-semibold">Roteiro</code>
 <span class="text-neutral-500 text-xs">— escreve SCRIPT.md</span>
 </div>
-<p class="text-neutral-400 text-xs ml-9">6–9 cenas, do primeiro princípio ao avançado. Narração curta por cena (≈100s de voz ≈ 1:50 de vídeo). Expandir siglas na fala: "SKILL.md" → "SKILL ponto M D".</p>
+<p class="text-neutral-400 text-xs ml-9">6–9 cenas, do primeiro princípio ao avançado. Narraçêo curta por cena (≈100s de voz ≈ 1:50 de vídeo). Expandir siglas na fala: "SKILL.md" → "SKILL ponto M D".</p>
 </div>
 </div>
 <div class="relative mb-4">
@@ -589,7 +589,7 @@ done</code></pre>
 <div class="bg-dark-700 border border-purple-500/20 rounded-xl p-4">
 <div class="flex items-center space-x-3 mb-1">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xs font-bold">4</span>
-<code class="text-purple-400 font-mono text-sm font-semibold">Narração</code>
+<code class="text-purple-400 font-mono text-sm font-semibold">Narraçêo</code>
 <span class="text-neutral-500 text-xs">— gera WAVs Kokoro</span>
 </div>
 <p class="text-neutral-400 text-xs ml-9">Voz <code class="font-mono text-purple-300">pf_dora --speed 0.98</code>. Medir durações com <code class="font-mono text-purple-300">ffprobe</code>. Template em <code class="font-mono text-purple-300">scripts/narration-template.sh</code>.</p>
@@ -600,7 +600,7 @@ done</code></pre>
 <div class="bg-dark-700 border border-purple-500/20 rounded-xl p-4">
 <div class="flex items-center space-x-3 mb-1">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xs font-bold">5</span>
-<code class="text-purple-400 font-mono text-sm font-semibold">Composição</code>
+<code class="text-purple-400 font-mono text-sm font-semibold">Composiçêo</code>
 <span class="text-neutral-500 text-xs">— adapta o template</span>
 </div>
 <p class="text-neutral-400 text-xs ml-9">Copiar como <code class="font-mono text-purple-300">build-index.mjs</code>. Preencher <code class="font-mono text-purple-300">AUDIO[]</code> com durações REAIS. Rodar: <code class="font-mono text-purple-300">node build-index.mjs</code> (16:9) e <code class="font-mono text-purple-300">node build-index.mjs --vertical</code> (9:16).</p>
@@ -635,7 +635,7 @@ done</code></pre>
 <span class="text-red-400 text-lg flex-shrink-0">🚨</span>
 <div>
 <div class="text-red-400 font-semibold text-sm mb-1">Ordem obrigatória</div>
-<p class="text-neutral-300 text-sm">O passo 3 (fontes) DEVE vir antes do passo 5 (composição), pois o template importa <code class="font-mono text-red-300">assets/fonts/fonts.css</code> que só existe após o fetch. Pular essa ordem gera erro de arquivo não encontrado em tempo de execução.</p>
+<p class="text-neutral-300 text-sm">O passo 3 (fontes) DEVE vir antes do passo 5 (composiçêo), pois o template importa <code class="font-mono text-red-300">assets/fonts/fonts.css</code> que só existe após o fetch. Pular essa ordem gera erro de arquivo nêo encontrado em tempo de execuçêo.</p>
 </div>
 </div>
 </div>
@@ -672,8 +672,8 @@ done</code></pre>
 <span class="text-purple-400 font-bold text-lg">5</span>
 </div>
 <div>
-<h2 class="text-xl sm:text-2xl font-bold text-neutral-100">🧠 Divulgação progressiva na prática</h2>
-<p class="text-neutral-400 mt-1">O design de <em>divulgação progressiva</em> é o que torna o skill eficiente: o Claude carrega só o que precisa, quando precisa.</p>
+<h2 class="text-xl sm:text-2xl font-bold text-neutral-100">🧠 Divulgaçêo progressiva na prática</h2>
+<p class="text-neutral-400 mt-1">O design de <em>divulgaçêo progressiva</em> é o que torna o skill eficiente: o Claude carrega só o que precisa, quando precisa.</p>
 </div>
 </div>
 <!-- Box conceito principal -->
@@ -716,12 +716,12 @@ done</code></pre>
 <div class="flex items-start space-x-3">
 <span class="text-primary text-lg flex-shrink-0">⚡</span>
 <div>
-<div class="text-primary font-semibold text-sm mb-1">Padrão replicável</div>
-<p class="text-neutral-300 text-sm">Esse design funciona para qualquer skill complexo: SKILL.md enxuto com links explícitos para referências especializadas. Quando o Claude executa o passo 6 (validar), ele acessa <code class="font-mono text-primary">gotchas.md</code>. Quando monta a composição, acessa <code class="font-mono text-primary">pipeline.md</code>. Nunca os dois ao mesmo tempo sem necessidade.</p>
+<div class="text-primary font-semibold text-sm mb-1">Padrêo replicável</div>
+<p class="text-neutral-300 text-sm">Esse design funciona para qualquer skill complexo: SKILL.md enxuto com links explícitos para referências especializadas. Quando o Claude executa o passo 6 (validar), ele acessa <code class="font-mono text-primary">gotchas.md</code>. Quando monta a composiçêo, acessa <code class="font-mono text-primary">pipeline.md</code>. Nunca os dois ao mesmo tempo sem necessidade.</p>
 </div>
 </div>
 </div>
-<!-- Grid FAZER / NÃO FAZER -->
+<!-- Grid FAZER / NêO FAZER -->
 <div class="grid sm:grid-cols-2 gap-4 mb-5">
 <div class="bg-emerald-900/20 border border-emerald-500/30 rounded-xl p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3">✓ Design correto de SKILL.md</div>
@@ -736,7 +736,7 @@ done</code></pre>
 <ul class="space-y-2 text-sm text-neutral-300">
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Colocar todo o conteúdo de references/ dentro do SKILL.md</span></li>
 <li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Description vaga como "cria vídeos" sem especificidade</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Misturar regras de identidade visual com regras de execução</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span>Misturar regras de identidade visual com regras de execuçêo</span></li>
 </ul>
 </div>
 </div>
@@ -773,21 +773,21 @@ done</code></pre>
 <span class="text-purple-400 font-bold text-lg">6</span>
 </div>
 <div>
-<h2 class="text-xl sm:text-2xl font-bold text-neutral-100">🎯 O padrão do usuário Nei</h2>
-<p class="text-neutral-400 mt-1">Toda produção de vídeo de Nei segue convenções firmes — não são preferências opcionais, são a assinatura de identidade do canal.</p>
+<h2 class="text-xl sm:text-2xl font-bold text-neutral-100">🎯 O padrêo do usuário Nei</h2>
+<p class="text-neutral-400 mt-1">Toda produçêo de vídeo de Nei segue convenções firmes — nêo sêo preferências opcionais, sêo a assinatura de identidade do canal.</p>
 </div>
 </div>
 <!-- Box conceito principal -->
 <div class="bg-gradient-to-r from-purple-900/30 to-dark-800 border border-purple-500/30 rounded-xl p-5 mb-5">
 <div class="flex items-center space-x-2 mb-3">
 <span class="text-purple-400 text-lg">💡</span>
-<span class="text-purple-400 font-semibold text-sm uppercase tracking-wide">Convenções não-negociáveis</span>
+<span class="text-purple-400 font-semibold text-sm uppercase tracking-wide">Convenções nêo-negociáveis</span>
 </div>
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="space-y-2">
 <div class="flex items-start space-x-2 text-sm">
 <span class="text-purple-400 mt-0.5 flex-shrink-0">→</span>
-<span class="text-neutral-300"><strong class="text-neutral-200">PT-BR obrigatório:</strong> todo texto, narração e legenda em português brasileiro. Siglas expandidas na voz ("SKILL ponto M D").</span>
+<span class="text-neutral-300"><strong class="text-neutral-200">PT-BR obrigatório:</strong> todo texto, narraçêo e legenda em português brasileiro. Siglas expandidas na voz ("SKILL ponto M D").</span>
 </div>
 <div class="flex items-start space-x-2 text-sm">
 <span class="text-purple-400 mt-0.5 flex-shrink-0">→</span>
@@ -812,9 +812,9 @@ done</code></pre>
 <div class="w-3 h-3 rounded-full bg-red-500 opacity-60"></div>
 <div class="w-3 h-3 rounded-full bg-yellow-500 opacity-60"></div>
 <div class="w-3 h-3 rounded-full bg-emerald-500 opacity-60"></div>
-<span class="text-neutral-500 text-xs ml-2 font-mono">narração padrão CTA final</span>
+<span class="text-neutral-500 text-xs ml-2 font-mono">narraçêo padrêo CTA final</span>
 </div>
-<pre class="text-xs font-mono text-neutral-300 leading-relaxed"><code><span class="text-neutral-500"># Cena s9 — CTA INEMA.CLUB (incluída no template, não remover)</span>
+<pre class="text-xs font-mono text-neutral-300 leading-relaxed"><code><span class="text-neutral-500"># Cena s9 — CTA INEMA.CLUB (incluída no template, nêo remover)</span>
 write s9 "Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club."
 
 <span class="text-neutral-500"># Render — sempre os dois formatos</span>
@@ -832,7 +832,7 @@ node build-index.mjs <span class="text-purple-400">--vertical</span> <span class
 <span class="text-primary text-lg flex-shrink-0">⚡</span>
 <div>
 <div class="text-primary font-semibold text-sm mb-1">A voz de Nei: pf_dora</div>
-<p class="text-neutral-300 text-sm">A voz <code class="font-mono text-primary">pf_dora</code> com velocidade <code class="font-mono text-primary">--speed 0.98</code> é a voz padrão de todos os vídeos. Alternativas PT-BR disponíveis: <code class="font-mono text-primary">pm_alex</code> (masculina) e <code class="font-mono text-primary">pm_santa</code> (masculina formal). A primeira execução do TTS baixa ~340MB de modelo — sem chave de API, sem espeak-ng.</p>
+<p class="text-neutral-300 text-sm">A voz <code class="font-mono text-primary">pf_dora</code> com velocidade <code class="font-mono text-primary">--speed 0.98</code> é a voz padrêo de todos os vídeos. Alternativas PT-BR disponíveis: <code class="font-mono text-primary">pm_alex</code> (masculina) e <code class="font-mono text-primary">pm_santa</code> (masculina formal). A primeira execuçêo do TTS baixa ~340MB de modelo — sem chave de API, sem espeak-ng.</p>
 </div>
 </div>
 </div>
@@ -842,7 +842,7 @@ node build-index.mjs <span class="text-purple-400">--vertical</span> <span class
 <span class="text-red-400 text-lg flex-shrink-0">🚨</span>
 <div>
 <div class="text-red-400 font-semibold text-sm mb-1">CTA INEMA.CLUB é inegociável</div>
-<p class="text-neutral-300 text-sm">A cena 9 (CTA INEMA.CLUB) já está pré-construída no <code class="font-mono text-red-300">composition-template.mjs</code>. Ela NUNCA deve ser removida. É a assinatura de canal e parte da identidade da marca. Adicionar mais cenas? Insira antes da cena 9, não depois.</p>
+<p class="text-neutral-300 text-sm">A cena 9 (CTA INEMA.CLUB) já está pré-construída no <code class="font-mono text-red-300">composition-template.mjs</code>. Ela NUNCA deve ser removida. É a assinatura de canal e parte da identidade da marca. Adicionar mais cenas? Insira antes da cena 9, nêo depois.</p>
 </div>
 </div>
 </div>
@@ -851,7 +851,7 @@ node build-index.mjs <span class="text-purple-400">--vertical</span> <span class
 <div class="bg-dark-700 rounded-lg p-3 text-center">
 <div class="text-purple-400 text-lg mb-1">🇧🇷</div>
 <div class="text-xs font-semibold text-neutral-300">PT-BR</div>
-<div class="text-xs text-neutral-500 mt-0.5">Sempre, sem exceção</div>
+<div class="text-xs text-neutral-500 mt-0.5">Sempre, sem exceçêo</div>
 </div>
 <div class="bg-dark-700 rounded-lg p-3 text-center">
 <div class="text-yellow-400 text-lg mb-1">🌑</div>
@@ -883,14 +883,14 @@ node build-index.mjs <span class="text-purple-400">--vertical</span> <span class
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>O propósito de cada um dos 3 arquivos em <code class="font-mono text-purple-300">references/</code></span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Como cada script funciona e como deve ser usado</span></li>
 <li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Os 7 passos obrigatórios do fluxo e sua ordem</span></li>
-<li class="flex items-start space-x-2"><span class="text-cyan-400">✓</span><span>Como a divulgação progressiva mantém o contexto leve</span></li>
-<li class="flex items-start space-x-2"><span class="text-cyan-400">✓</span><span>As convenções não-negociáveis de Nei (PT-BR, dark premium, 16:9+9:16, CTA)</span></li>
+<li class="flex items-start space-x-2"><span class="text-cyan-400">✓</span><span>Como a divulgaçêo progressiva mantém o contexto leve</span></li>
+<li class="flex items-start space-x-2"><span class="text-cyan-400">✓</span><span>As convenções nêo-negociáveis de Nei (PT-BR, dark premium, 16:9+9:16, CTA)</span></li>
 </ul>
 </div>
 <div>
 <h3 class="text-purple-400 font-semibold text-sm uppercase tracking-wide mb-3">Fatos para lembrar</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Voz padrão: <code class="font-mono text-purple-300">pf_dora --speed 0.98</code></span></li>
+<li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Voz padrêo: <code class="font-mono text-purple-300">pf_dora --speed 0.98</code></span></li>
 <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>LEAD = 0.5s · TAIL = 0.9s · FADE = 0.45s</span></li>
 <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Fontes: Sora 700–800 / Inter 400–600 / JetBrains Mono</span></li>
 <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Fundo: <code class="font-mono text-purple-300">#0D1321</code> · Acento âmbar · Ciano destaque</span></li>
@@ -924,7 +924,7 @@ node build-index.mjs <span class="text-purple-400">--vertical</span> <span class
 <span class="text-2xl">🎬</span>
 <div>
 <div class="font-bold text-neutral-200">HyperFrames</div>
-<div class="text-xs text-neutral-500">Curso completo de produção de vídeos com IA</div>
+<div class="text-xs text-neutral-500">Curso completo de produçêo de vídeos com IA</div>
 </div>
 </div>
 <div class="flex items-center space-x-4 text-sm text-neutral-500">

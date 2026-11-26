@@ -120,7 +120,7 @@
 <div>
 <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÓDULO 3.3</span>
 <h1 class="text-3xl sm:text-4xl font-bold mb-4">⚙️ O gerador build-index.mjs</h1>
-<p class="text-lg text-neutral-400 max-w-xl">Anatomia completa do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">composition-template.mjs</code>: como <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> governa tudo, o cálculo de <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">S[]</code>, a construção de cenas e tweens GSAP, a montagem do HTML completo, overrides 9:16 e a CTA invariável.</p>
+<p class="text-lg text-neutral-400 max-w-xl">Anatomia completa do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">composition-template.mjs</code>: como <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> governa tudo, o cálculo de <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">S[]</code>, a construçêo de cenas e tweens GSAP, a montagem do HTML completo, overrides 9:16 e a CTA invariável.</p>
 <div class="grid grid-cols-4 gap-3 mt-6">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
 <div class="text-xl font-bold text-purple-400">6</div>
@@ -232,7 +232,7 @@
 <div class="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-lg">1</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🔢 AUDIO[] como fonte única do timing</h2>
-<p class="text-neutral-400 mt-2">O array <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> contém as durações REAIS (medidas com <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">ffprobe</code>) de cada narração WAV. Ele é a única variável que você precisa preencher para que todo o timing do vídeo — HTML, GSAP e áudio — fique sincronizado automaticamente.</p>
+<p class="text-neutral-400 mt-2">O array <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> contém as durações REAIS (medidas com <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">ffprobe</code>) de cada narraçêo WAV. Ele é a única variável que você precisa preencher para que todo o timing do vídeo — HTML, GSAP e áudio — fique sincronizado automaticamente.</p>
 </div>
 </div>
 </div>
@@ -241,18 +241,18 @@
 <div class="rounded-xl bg-gradient-to-br from-purple-900/30 to-dark-700/50 border border-purple-500/30 p-5">
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-widest mb-2">Conceito Principal</div>
 <p class="text-neutral-200 font-medium">O array de durações governa tudo. Nenhum número de tempo aparece em outro lugar do código. Altere um WAV, atualize a entrada correspondente em <code class="text-purple-300">AUDIO[]</code>, rode o gerador — o vídeo inteiro recalibra automaticamente.</p>
-<p class="text-neutral-400 text-sm mt-3">Isso é possível porque o gerador roda em Node.js e produz um HTML estático com todos os tempos já calculados. O browser recebe números prontos — não precisa calcular nada em runtime.</p>
+<p class="text-neutral-400 text-sm mt-3">Isso é possível porque o gerador roda em Node.js e produz um HTML estático com todos os tempos já calculados. O browser recebe números prontos — nêo precisa calcular nada em runtime.</p>
 </div>
 <!-- box de código: AUDIO[] real do template -->
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">composition-template.mjs — AUDIO[] com durações reais medidas pelo ffprobe</div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 font-mono text-sm overflow-x-auto">
-<div class="text-neutral-500 text-xs mb-3">// Durações REAIS medidas com ffprobe (9 cenas; s9 = CTA — não remover)</div>
+<div class="text-neutral-500 text-xs mb-3">// Durações REAIS medidas com ffprobe (9 cenas; s9 = CTA — nêo remover)</div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">AUDIO</span> <span class="text-neutral-300">= [</span></div>
 <div class="ml-4"><span class="text-orange-400">10.944</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s1 — intro</span></div>
 <div class="ml-4"><span class="text-orange-400">14.464</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s2 — pasta + arquivo</span></div>
 <div class="ml-4"><span class="text-orange-400">13.760</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s3 — anatomia SKILL.md</span></div>
-<div class="ml-4"><span class="text-orange-400">17.237333</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s4 — divulgação progressiva</span></div>
+<div class="ml-4"><span class="text-orange-400">17.237333</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s4 — divulgaçêo progressiva</span></div>
 <div class="ml-4"><span class="text-orange-400">10.858667</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s5 — onde vivem</span></div>
 <div class="ml-4"><span class="text-orange-400">13.525333</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s6 — nível avançado</span></div>
 <div class="ml-4"><span class="text-orange-400">11.114667</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// s7 — exemplo real</span></div>
@@ -275,7 +275,7 @@
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">data-start</code> e <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">data-duration</code> de cada <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">.scene.clip</code></li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Tempos absolutos de todos os tweens GSAP via <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">anim(i, s.start)</code></li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">data-start</code> dos elementos <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">&lt;audio&gt;</code> em track 20</li>
-<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">TOTAL</code> da composição e barra de progresso</li>
+<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">TOTAL</code> da composiçêo e barra de progresso</li>
 </ul>
 </div>
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4">
@@ -283,7 +283,7 @@
 <ul class="space-y-2 text-sm text-neutral-300">
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Kokoro gera durações diferentes conforme texto e velocidade (<code class="text-red-300 bg-dark-700 px-1 rounded text-xs">--speed 0.98</code>)</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Estimativa errada = áudio e visual dessincronizados permanentemente</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> O render headless não avisa — o vídeo simplesmente fica errado</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> O render headless nêo avisa — o vídeo simplesmente fica errado</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nunca escreva durações de cabeça — use sempre <code class="text-red-300 bg-dark-700 px-1 rounded text-xs">ffprobe</code></li>
 </ul>
 </div>
@@ -293,7 +293,7 @@
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🔢</div><div class="text-xs font-semibold text-neutral-200">AUDIO[]</div><div class="text-xs text-neutral-500">Única entrada de timing</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">📏</div><div class="text-xs font-semibold text-neutral-200">ffprobe</div><div class="text-xs text-neutral-500">Medição obrigatória</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">📏</div><div class="text-xs font-semibold text-neutral-200">ffprobe</div><div class="text-xs text-neutral-500">Mediçêo obrigatória</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔄</div><div class="text-xs font-semibold text-neutral-200">Propaga tudo</div><div class="text-xs text-neutral-500">HTML + GSAP + áudio</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🔒</div><div class="text-xs font-semibold text-neutral-200">s9 = CTA</div><div class="text-xs text-neutral-500">Sempre incluída</div></div>
 </div>
@@ -315,7 +315,7 @@
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-purple-900/30 to-dark-700/50 border border-purple-500/30 p-5">
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-widest mb-2">As três constantes e o acumulador</div>
-<p class="text-neutral-200 font-medium">Três constantes controlam toda a ritmicidade: <code class="text-purple-300">LEAD=0.5</code> (visual entra antes da voz), <code class="text-purple-300">TAIL=0.9</code> (visual segura após a voz) e <code class="text-purple-300">FADE=0.45</code> (duração do fade-in/out do <code class="text-purple-300">.scene-inner</code>). Um acumulador <code class="text-purple-300">t</code> cresce a cada cena.</p>
+<p class="text-neutral-200 font-medium">Três constantes controlam toda a ritmicidade: <code class="text-purple-300">LEAD=0.5</code> (visual entra antes da voz), <code class="text-purple-300">TAIL=0.9</code> (visual segura após a voz) e <code class="text-purple-300">FADE=0.45</code> (duraçêo do fade-in/out do <code class="text-purple-300">.scene-inner</code>). Um acumulador <code class="text-purple-300">t</code> cresce a cada cena.</p>
 <p class="text-neutral-400 text-sm mt-3">Fórmulas fundamentais: <span class="font-mono text-cyan-300">dur = LEAD + a + TAIL</span> · <span class="font-mono text-cyan-300">audioStart = t + LEAD</span> · <span class="font-mono text-cyan-300">end = t + dur</span>.</p>
 </div>
 <!-- box de código: cálculo exato de S[] -->
@@ -333,7 +333,7 @@
 <div class="text-neutral-500 text-xs">// acumulador de tempo absoluto</div>
 <div><span class="text-purple-400">let</span> <span class="text-cyan-400">t</span> <span class="text-neutral-300">= </span><span class="text-orange-400">0</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">S</span> <span class="text-neutral-300">= AUDIO.</span><span class="text-cyan-400">map</span><span class="text-neutral-300">((a, i) =&gt; {</span></div>
-<div class="ml-4"><span class="text-purple-400">const</span> <span class="text-cyan-400">dur</span> <span class="text-neutral-300">= LEAD + a + TAIL;       </span><span class="text-neutral-500">// duração total da cena</span></div>
+<div class="ml-4"><span class="text-purple-400">const</span> <span class="text-cyan-400">dur</span> <span class="text-neutral-300">= LEAD + a + TAIL;       </span><span class="text-neutral-500">// duraçêo total da cena</span></div>
 <div class="ml-4"><span class="text-purple-400">const</span> <span class="text-cyan-400">o</span> <span class="text-neutral-300">= {</span></div>
 <div class="ml-6"><span class="text-cyan-400">i</span><span class="text-neutral-300">:          i + </span><span class="text-orange-400">1</span><span class="text-neutral-300">,</span> <span class="text-neutral-500">// índice 1-based</span></div>
 <div class="ml-6"><span class="text-cyan-400">start</span><span class="text-neutral-300">:      round(t),         </span><span class="text-neutral-500">// → data-start do .clip</span></div>
@@ -346,7 +346,7 @@
 <div class="ml-4"><span class="text-purple-400">return</span> <span class="text-cyan-400">o</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-neutral-300">});</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// Duração total da composição — alimenta a barra de progresso</div>
+<div class="text-neutral-500 text-xs">// Duraçêo total da composiçêo — alimenta a barra de progresso</div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">TOTAL</span> <span class="text-neutral-300">= round(t);</span></div>
 </div>
 </div>
@@ -395,8 +395,8 @@
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">⏱️</div><div class="text-xs font-semibold text-neutral-200">LEAD=0.5</div><div class="text-xs text-neutral-500">Visual antes da voz</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🔚</div><div class="text-xs font-semibold text-neutral-200">TAIL=0.9</div><div class="text-xs text-neutral-500">Segura após voz</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🌊</div><div class="text-xs font-semibold text-neutral-200">FADE=0.45</div><div class="text-xs text-neutral-500">Transição scene-inner</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">➕</div><div class="text-xs font-semibold text-neutral-200">round(n)</div><div class="text-xs text-neutral-500">Precisão 3 casas</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🌊</div><div class="text-xs font-semibold text-neutral-200">FADE=0.45</div><div class="text-xs text-neutral-500">Transiçêo scene-inner</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">➕</div><div class="text-xs font-semibold text-neutral-200">round(n)</div><div class="text-xs text-neutral-500">Precisêo 3 casas</div></div>
 </div>
 </div>
 </div>
@@ -408,7 +408,7 @@
 <div class="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-lg">3</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🎬 sceneN() e anim(i,t) por cena</h2>
-<p class="text-neutral-400 mt-2">Cada cena tem duas funções: <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">sceneN()</code> retorna o HTML interno do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">.scene-inner</code>, e <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">anim(i,t)</code> gera strings de código GSAP que serão embutidas no <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">&lt;script&gt;</code> do HTML final. O fade do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">.scene-inner</code> é sempre gerado pela parte comum de <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">anim()</code>.</p>
+<p class="text-neutral-400 mt-2">Cada cena tem duas funções: <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">sceneN()</code> retorna o HTML interno do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">.scene-inner</code>, e <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">anim(i,t)</code> gera strings de código GSAP que serêo embutidas no <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">&lt;script&gt;</code> do HTML final. O fade do <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">.scene-inner</code> é sempre gerado pela parte comum de <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">anim()</code>.</p>
 </div>
 </div>
 </div>
@@ -437,7 +437,7 @@
 <div class="ml-4"><span class="text-yellow-300">`</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-neutral-300">}</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// BODIES = lista ordenada das funções (scene9 = CTA, não remover)</div>
+<div class="text-neutral-500 text-xs">// BODIES = lista ordenada das funções (scene9 = CTA, nêo remover)</div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">BODIES</span> <span class="text-neutral-300">= [scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9];</span></div>
 </div>
 </div>
@@ -469,7 +469,7 @@
 <div class="ml-8"><span class="text-cyan-400">P</span><span class="text-neutral-300">(`tl.from("#s1-sub",{y:20,opacity:0,duration:.6,ease:"power2.out"},${at(1.15)});`);</span></div>
 <div class="ml-6"><span class="text-purple-400">break</span><span class="text-neutral-300">;</span></div>
 <div class="ml-6 text-neutral-500 text-xs">// ... cases 2–8 com tweens específicos ...</div>
-<div class="ml-6 text-neutral-500 text-xs">// case 9 = CTA — não modificar</div>
+<div class="ml-6 text-neutral-500 text-xs">// case 9 = CTA — nêo modificar</div>
 <div class="ml-4"><span class="text-neutral-300">}</span></div>
 <div class="ml-4 text-neutral-500 text-xs">// caption fade in/out</div>
 <div class="ml-4"><span class="text-cyan-400">P</span><span class="text-neutral-300">(`tl.fromTo("#cap-${i}",{opacity:0,y:14},{opacity:1,y:0,duration:.5,ease:"power2.out"},${at(0.35)});`);</span></div>
@@ -478,12 +478,12 @@
 <div><span class="text-neutral-300">}</span></div>
 </div>
 </div>
-<!-- alerta: animar scene-inner, não clip -->
+<!-- alerta: animar scene-inner, nêo clip -->
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4 flex gap-3">
 <span class="text-red-400 text-xl flex-shrink-0">⚠️</span>
 <div>
 <div class="text-red-400 font-semibold text-sm mb-1">Animar sempre o .scene-inner — nunca o .clip</div>
-<p class="text-neutral-400 text-sm">O HyperFrames força <code class="text-red-300">opacity:1</code> no clip ativo. Se você tentar animar o <code class="text-red-300">.clip</code> ou o <code class="text-red-300">.scene</code>, a animação de fade não funciona. O wrapper animável é sempre o filho <code class="text-red-300">.scene-inner</code>. O template já gera os fades para ele — não remova essas linhas.</p>
+<p class="text-neutral-400 text-sm">O HyperFrames força <code class="text-red-300">opacity:1</code> no clip ativo. Se você tentar animar o <code class="text-red-300">.clip</code> ou o <code class="text-red-300">.scene</code>, a animaçêo de fade nêo funciona. O wrapper animável é sempre o filho <code class="text-red-300">.scene-inner</code>. O template já gera os fades para ele — nêo remova essas linhas.</p>
 </div>
 </div>
 <!-- mini-grid -->
@@ -505,7 +505,7 @@
 <div class="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-lg">4</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🧱 Montagem do HTML completo</h2>
-<p class="text-neutral-400 mt-2">Os quatro streams (<code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">scenesHTML</code>, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">captionsHTML</code>, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">audioHTML</code> em track 20, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">animJS</code>) são montados numa template string final com a timeline GSAP pausada registrada em <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">window.__timelines["main"]</code>. O ambiente (glow/grid) e a sentinela <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">tl.set({},{},TOTAL)</code> também fazem parte da montagem.</p>
+<p class="text-neutral-400 mt-2">Os quatro streams (<code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">scenesHTML</code>, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">captionsHTML</code>, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">audioHTML</code> em track 20, <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">animJS</code>) sêo montados numa template string final com a timeline GSAP pausada registrada em <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">window.__timelines["main"]</code>. O ambiente (glow/grid) e a sentinela <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">tl.set({},{},TOTAL)</code> também fazem parte da montagem.</p>
 </div>
 </div>
 </div>
@@ -514,11 +514,11 @@
 <div class="rounded-xl bg-gradient-to-br from-purple-900/30 to-dark-700/50 border border-purple-500/30 p-5">
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-widest mb-2">Quatro streams, um HTML</div>
 <p class="text-neutral-200 font-medium">A montagem final é uma template string gigante que costura os quatro streams. As captions ficam em tracks alternados (2/4), o áudio em track 20 (especial). A timeline GSAP é criada pausada e registrada em <code class="text-purple-300">window.__timelines["main"]</code> — o HyperFrames player a controla externamente.</p>
-<p class="text-neutral-400 text-sm mt-3">A sentinela <code class="text-purple-300">tl.set({}, {}, TOTAL)</code> estende a timeline até o fim da composição, garantindo que a barra de progresso chegue até o fim mesmo sem tweens após a última cena.</p>
+<p class="text-neutral-400 text-sm mt-3">A sentinela <code class="text-purple-300">tl.set({}, {}, TOTAL)</code> estende a timeline até o fim da composiçêo, garantindo que a barra de progresso chegue até o fim mesmo sem tweens após a última cena.</p>
 </div>
 <!-- box de código: montagem das cenas e captions -->
 <div>
-<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Geração dos quatro streams a partir de S[]</div>
+<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Geraçêo dos quatro streams a partir de S[]</div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 font-mono text-sm overflow-x-auto">
 <div class="text-neutral-500 text-xs mb-3">// composition-template.mjs — os quatro streams</div>
 <div class="text-neutral-500 text-xs">// 1. scenesHTML: .scene.clip com tracks alternados 1/3</div>
@@ -562,7 +562,7 @@
 <div class="ml-4"><span class="text-purple-400">const</span> <span class="text-cyan-400">tl</span> <span class="text-neutral-300">= gsap.timeline({ paused: </span><span class="text-orange-400">true</span> <span class="text-neutral-300">});</span></div>
 <div class="ml-4"><span class="text-purple-400">const</span> <span class="text-cyan-400">TOTAL</span> <span class="text-neutral-300">= </span><span class="text-orange-400">101.234</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// valor calculado pelo gerador</span></div>
 <br/>
-<div class="ml-4 text-neutral-500 text-xs">// animação de ambiente — repeat cobre o TOTAL</div>
+<div class="ml-4 text-neutral-500 text-xs">// animaçêo de ambiente — repeat cobre o TOTAL</div>
 <div class="ml-4"><span class="text-cyan-400">tl</span><span class="text-neutral-300">.to("#glow",{scale:</span><span class="text-orange-400">1.22</span><span class="text-neutral-300">,opacity:</span><span class="text-orange-400">.55</span><span class="text-neutral-300">,duration:</span><span class="text-orange-400">4.5</span><span class="text-neutral-300">,yoyo:</span><span class="text-orange-400">true</span><span class="text-neutral-300">,</span></div>
 <div class="ml-6"><span class="text-neutral-300">repeat:Math.ceil(TOTAL/</span><span class="text-orange-400">4.5</span><span class="text-neutral-300">)+</span><span class="text-orange-400">1</span><span class="text-neutral-300">,ease:</span><span class="text-yellow-300">"sine.inOut"</span><span class="text-neutral-300">},</span><span class="text-orange-400">0</span><span class="text-neutral-300">);</span></div>
 <div class="ml-4"><span class="text-cyan-400">tl</span><span class="text-neutral-300">.to("#glow2",{scale:</span><span class="text-orange-400">1.18</span><span class="text-neutral-300">,duration:</span><span class="text-orange-400">6</span><span class="text-neutral-300">,yoyo:</span><span class="text-orange-400">true</span><span class="text-neutral-300">,</span></div>
@@ -574,7 +574,7 @@
 <div class="ml-4 text-neutral-500 text-xs">// tweens das cenas (gerados por animJS)</div>
 <div class="ml-4 text-neutral-500 text-xs">// ${animJS} — strings geradas por anim()</div>
 <br/>
-<div class="ml-4 text-neutral-500 text-xs">// sentinela: estende a timeline até o fim da composição</div>
+<div class="ml-4 text-neutral-500 text-xs">// sentinela: estende a timeline até o fim da composiçêo</div>
 <div class="ml-4"><span class="text-cyan-400">tl</span><span class="text-neutral-300">.set({}, {}, TOTAL);</span></div>
 <div class="ml-4"><span class="text-cyan-400">window.__timelines</span><span class="text-neutral-300">[</span><span class="text-yellow-300">"main"</span><span class="text-neutral-300">] = tl;</span></div>
 <div><span class="text-yellow-300">&lt;/script&gt;</span></div>
@@ -586,11 +586,11 @@
 <div class="grid sm:grid-cols-3 gap-3 text-sm">
 <div class="bg-dark-700/60 rounded-lg p-3">
 <div class="text-purple-400 font-bold mb-1">#glow + #glow2</div>
-<div class="text-neutral-400">Dois radiais pulsantes com <code class="text-purple-300 text-xs">yoyo:true</code> cobrindo todo o TOTAL. <code class="text-purple-300 text-xs">data-layout-ignore</code> — não interfere no layout do HyperFrames.</div>
+<div class="text-neutral-400">Dois radiais pulsantes com <code class="text-purple-300 text-xs">yoyo:true</code> cobrindo todo o TOTAL. <code class="text-purple-300 text-xs">data-layout-ignore</code> — nêo interfere no layout do HyperFrames.</div>
 </div>
 <div class="bg-dark-700/60 rounded-lg p-3">
 <div class="text-purple-400 font-bold mb-1">#grid</div>
-<div class="text-neutral-400">Padrão de grade que scroll infinitamente com <code class="text-purple-300 text-xs">backgroundPositionY+=128</code> ao longo de todo o vídeo. Cria sensação de movimento.</div>
+<div class="text-neutral-400">Padrêo de grade que scroll infinitamente com <code class="text-purple-300 text-xs">backgroundPositionY+=128</code> ao longo de todo o vídeo. Cria sensaçêo de movimento.</div>
 </div>
 <div class="bg-dark-700/60 rounded-lg p-3">
 <div class="text-purple-400 font-bold mb-1">#grain + #ghost</div>
@@ -617,7 +617,7 @@
 <div class="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-lg">5</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">📱 Overrides 9:16 via body.v e flag --vertical</h2>
-<p class="text-neutral-400 mt-2">O gerador suporta dois formatos: 16:9 (1920×1080) padrão e 9:16 (1080×1920) para Shorts. A flag <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">--vertical</code> troca W e H, adiciona a classe <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">body.v</code> no HTML gerado e aplica overrides CSS automáticos. O output é sempre <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">index.html</code>.</p>
+<p class="text-neutral-400 mt-2">O gerador suporta dois formatos: 16:9 (1920×1080) padrêo e 9:16 (1080×1920) para Shorts. A flag <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">--vertical</code> troca W e H, adiciona a classe <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">body.v</code> no HTML gerado e aplica overrides CSS automáticos. O output é sempre <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">index.html</code>.</p>
 </div>
 </div>
 </div>
@@ -628,25 +628,25 @@
 <p class="text-neutral-200 font-medium">O mesmo <code class="text-purple-300">build-index.mjs</code> gera 16:9 e 9:16. A lógica de timing é idêntica — só as dimensões W/H mudam e o CSS do <code class="text-purple-300">body.v</code> ajusta fontes, padding e layout. Você renderiza duas vezes com a mesma fonte, obtendo dois formatos sincronizados.</p>
 <p class="text-neutral-400 text-sm mt-3">Fluxo típico: <code class="text-purple-300">node build-index.mjs</code> → renderiza 16:9 → <code class="text-purple-300">node build-index.mjs --vertical</code> → renderiza 9:16. Ambos sobrescrevem <code class="text-purple-300">index.html</code> — nunca edite o HTML diretamente.</p>
 </div>
-<!-- box de código: detecção da flag e troca de W/H -->
+<!-- box de código: detecçêo da flag e troca de W/H -->
 <div>
-<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">composition-template.mjs — detecção de --vertical e troca de W/H</div>
+<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">composition-template.mjs — detecçêo de --vertical e troca de W/H</div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 font-mono text-sm overflow-x-auto">
-<div class="text-neutral-500 text-xs mb-3">// Detecção de formato no topo do arquivo</div>
+<div class="text-neutral-500 text-xs mb-3">// Detecçêo de formato no topo do arquivo</div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">VERT</span> <span class="text-neutral-300">= process.argv.includes(</span><span class="text-yellow-300">"--vertical"</span><span class="text-neutral-300">);</span></div>
-<div><span class="text-purple-400">const</span> <span class="text-cyan-400">W</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1080</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1920</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// largura da composição</span></div>
-<div><span class="text-purple-400">const</span> <span class="text-cyan-400">H</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1920</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1080</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// altura da composição</span></div>
+<div><span class="text-purple-400">const</span> <span class="text-cyan-400">W</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1080</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1920</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// largura da composiçêo</span></div>
+<div><span class="text-purple-400">const</span> <span class="text-cyan-400">H</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1920</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1080</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// altura da composiçêo</span></div>
 <div><span class="text-purple-400">const</span> <span class="text-cyan-400">OUT</span> <span class="text-neutral-300">= </span><span class="text-yellow-300">"index.html"</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// sempre index.html — ambos os formatos</span></div>
 <br/>
 <div class="text-neutral-500 text-xs">// body recebe classe "v" quando --vertical</div>
 <div><span class="text-neutral-500">// No HTML gerado: &lt;body${VERT ? ' class="v"' : ''}&gt;</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// Atributos da composição raiz</div>
+<div class="text-neutral-500 text-xs">// Atributos da composiçêo raiz</div>
 <div><span class="text-yellow-300">&lt;div id="composition"</span></div>
 <div class="ml-4"><span class="text-yellow-300">data-start="0" data-duration="${TOTAL}"</span></div>
 <div class="ml-4"><span class="text-yellow-300">data-width="${W}" data-height="${H}"&gt;</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// Log de confirmação no terminal</div>
+<div class="text-neutral-500 text-xs">// Log de confirmaçêo no terminal</div>
 <div><span class="text-cyan-400">console</span><span class="text-neutral-300">.log(`${OUT} gerado · ${W}×${H} · TOTAL = ${TOTAL}s · ${S.length} cenas`);</span></div>
 <div><span class="text-cyan-400">S</span><span class="text-neutral-300">.forEach(s =&gt; console.log(</span></div>
 <div class="ml-4"><span class="text-neutral-300">`  s${s.i}: start=${s.start} dur=${s.dur} audio@${s.audioStart} (${s.audioDur}s)`));</span></div>
@@ -673,7 +673,7 @@
 <div class="text-purple-400 font-semibold text-sm mb-3">📐 16:9 — YouTube principal</div>
 <div class="space-y-2 text-sm text-neutral-300">
 <div class="font-mono text-xs bg-dark-700/60 rounded p-2">node build-index.mjs</div>
-<div class="text-neutral-400">Gera 1920×1080. Sem classe <code class="text-purple-300 text-xs">v</code> no body. CSS padrão com fontes grandes para tela de 1080p.</div>
+<div class="text-neutral-400">Gera 1920×1080. Sem classe <code class="text-purple-300 text-xs">v</code> no body. CSS padrêo com fontes grandes para tela de 1080p.</div>
 </div>
 </div>
 <div class="rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-4">
@@ -688,7 +688,7 @@
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">📐</div><div class="text-xs font-semibold text-neutral-200">1920×1080</div><div class="text-xs text-neutral-500">16:9 padrão</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">📐</div><div class="text-xs font-semibold text-neutral-200">1920×1080</div><div class="text-xs text-neutral-500">16:9 padrêo</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">📱</div><div class="text-xs font-semibold text-neutral-200">1080×1920</div><div class="text-xs text-neutral-500">9:16 Shorts</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🏷️</div><div class="text-xs font-semibold text-neutral-200">body.v</div><div class="text-xs text-neutral-500">Classe CSS de modo</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">💾</div><div class="text-xs font-semibold text-neutral-200">index.html</div><div class="text-xs text-neutral-500">Sempre sobrescrito</div></div>
@@ -703,7 +703,7 @@
 <div class="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-lg">6</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🏁 A CTA scene9() / case 9 — assinatura invariável</h2>
-<p class="text-neutral-400 mt-2">A cena 9 é a assinatura padrão de todos os vídeos INEMA.CLUB. Ela mostra "CONTINUA EM" + <strong class="text-yellow-300">INEMA</strong><strong class="text-amber-400">.CLUB</strong> com glow e a URL <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">🌐 inema.club</code>. Nunca deve ser removida, reposicionada ou alterada — é parte da identidade do canal.</p>
+<p class="text-neutral-400 mt-2">A cena 9 é a assinatura padrêo de todos os vídeos INEMA.CLUB. Ela mostra "CONTINUA EM" + <strong class="text-yellow-300">INEMA</strong><strong class="text-amber-400">.CLUB</strong> com glow e a URL <code class="text-purple-400 bg-dark-700 px-1 rounded text-sm">🌐 inema.club</code>. Nunca deve ser removida, reposicionada ou alterada — é parte da identidade do canal.</p>
 </div>
 </div>
 </div>
@@ -711,14 +711,14 @@
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-purple-900/30 to-dark-700/50 border border-purple-500/30 p-5">
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-widest mb-2">Por que a CTA é invariável</div>
-<p class="text-neutral-200 font-medium">A cena 9 funciona como uma assinatura de marca: quem assiste qualquer vídeo INEMA.CLUB sempre vê o mesmo encerramento. Isso cria reconhecimento e direciona o espectador para o site. O template já inclui a narração de CTA (<code class="text-purple-300">s9.wav</code>) e o HTML — você só fornece a duração real no <code class="text-purple-300">AUDIO[]</code>.</p>
-<p class="text-neutral-400 text-sm mt-3">Regra: <strong class="text-purple-300">AUDIO[8]</strong> (índice 8, cena 9) sempre é a duração de <code class="text-purple-300">assets/audio/s9.wav</code>. Narração padrão: <em>"Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club."</em></p>
+<p class="text-neutral-200 font-medium">A cena 9 funciona como uma assinatura de marca: quem assiste qualquer vídeo INEMA.CLUB sempre vê o mesmo encerramento. Isso cria reconhecimento e direciona o espectador para o site. O template já inclui a narraçêo de CTA (<code class="text-purple-300">s9.wav</code>) e o HTML — você só fornece a duraçêo real no <code class="text-purple-300">AUDIO[]</code>.</p>
+<p class="text-neutral-400 text-sm mt-3">Regra: <strong class="text-purple-300">AUDIO[8]</strong> (índice 8, cena 9) sempre é a duraçêo de <code class="text-purple-300">assets/audio/s9.wav</code>. Narraçêo padrêo: <em>"Isso é conteúdo do INEMA ponto CLUB. Acesse: inema ponto club."</em></p>
 </div>
 <!-- box de código: scene9() completo -->
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">composition-template.mjs — scene9() e case 9 de anim()</div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 font-mono text-sm overflow-x-auto">
-<div class="text-neutral-500 text-xs mb-3">// scene9() — CTA INEMA.CLUB — não modificar</div>
+<div class="text-neutral-500 text-xs mb-3">// scene9() — CTA INEMA.CLUB — nêo modificar</div>
 <div><span class="text-purple-400">function</span> <span class="text-cyan-400">scene9</span><span class="text-neutral-300">() {</span></div>
 <div class="ml-4"><span class="text-purple-400">return</span> <span class="text-yellow-300">`</span></div>
 <div class="ml-6"><span class="text-yellow-300">&lt;div class="cta-wrap" id="s9-wrap"&gt;</span></div>
@@ -743,12 +743,12 @@
 <div><span class="text-purple-400">break</span><span class="text-neutral-300">;</span></div>
 </div>
 </div>
-<!-- regra de ouro: não remover -->
+<!-- regra de ouro: nêo remover -->
 <div class="rounded-xl border border-amber-500/30 bg-amber-500/10 p-4 flex gap-3">
 <span class="text-amber-400 text-xl flex-shrink-0">⚠️</span>
 <div>
 <div class="text-amber-400 font-semibold text-sm mb-1">Regra de ouro: scene9() nunca sai</div>
-<p class="text-neutral-400 text-sm">A CTA está na posição 9 de <code class="text-amber-300">BODIES[]</code> e no índice 8 de <code class="text-amber-300">AUDIO[]</code>. Remover ou reposicionar quebra o timing de todo o vídeo e elimina a assinatura do canal. Ao adaptar o template para um novo vídeo, mude apenas as cenas 1–8 e atualize as durações em <code class="text-amber-300">AUDIO[0..7]</code>. <code class="text-amber-300">AUDIO[8]</code> é sempre o WAV da CTA.</p>
+<p class="text-neutral-400 text-sm">A CTA está na posiçêo 9 de <code class="text-amber-300">BODIES[]</code> e no índice 8 de <code class="text-amber-300">AUDIO[]</code>. Remover ou reposicionar quebra o timing de todo o vídeo e elimina a assinatura do canal. Ao adaptar o template para um novo vídeo, mude apenas as cenas 1–8 e atualize as durações em <code class="text-amber-300">AUDIO[0..7]</code>. <code class="text-amber-300">AUDIO[8]</code> é sempre o WAV da CTA.</p>
 </div>
 </div>
 <!-- CSS da CTA -->
@@ -788,7 +788,7 @@
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-amber-400 text-lg mb-1">🏁</div><div class="text-xs font-semibold text-neutral-200">scene9() fixa</div><div class="text-xs text-neutral-500">Assinatura padrão</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-amber-400 text-lg mb-1">🏁</div><div class="text-xs font-semibold text-neutral-200">scene9() fixa</div><div class="text-xs text-neutral-500">Assinatura padrêo</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🎨</div><div class="text-xs font-semibold text-neutral-200">Creme + âmbar</div><div class="text-xs text-neutral-500">Identidade INEMA.CLUB</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔊</div><div class="text-xs font-semibold text-neutral-200">AUDIO[8]</div><div class="text-xs text-neutral-500">WAV da CTA</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-purple-400 text-lg mb-1">🔒</div><div class="text-xs font-semibold text-neutral-200">case 9 intocado</div><div class="text-xs text-neutral-500">Animações da CTA</div></div>
@@ -827,7 +827,7 @@
           </a>
 </div>
 </div>
-<!-- CTAs de navegação -->
+<!-- CTAs de navegaçêo -->
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 3</a>
 <a class="flex-1 text-center px-6 py-3 bg-purple-700 text-white rounded-lg font-semibold hover:bg-purple-600 transition-colors" href="modulo-3-4.html">Próximo Módulo: 3.4 Gotchas &amp; correções →</a>

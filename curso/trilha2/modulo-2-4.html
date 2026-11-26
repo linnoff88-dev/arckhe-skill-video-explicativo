@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Módulo 2.4 — Composição de cenas | HyperFrames · INEMA.CLUB</title>
+<title>Módulo 2.4 — Composiçêo de cenas | HyperFrames · INEMA.CLUB</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
@@ -115,7 +115,7 @@
 <div class="grid lg:grid-cols-2 gap-8 items-center">
 <div>
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🎞️ Composição de cenas</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">🎞️ Composiçêo de cenas</h1>
 <p class="text-lg text-neutral-400 max-w-xl">Adapte o <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">composition-template.mjs</code> para cada novo vídeo: preencha <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code>, escreva <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">sceneN()</code>, codifique os tweens GSAP em <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">anim()</code> e alinhe tudo com uma única fonte de verdade de timing.</p>
 <div class="grid grid-cols-4 gap-3 mt-6">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
@@ -208,7 +208,7 @@
 <path d="M33 152 L33 206" fill="none" opacity=".5" stroke="#38bdf8" stroke-dasharray="3,2" stroke-width="1"></path>
 <path d="M385 152 L385 206" fill="none" opacity=".5" stroke="#60a5fa" stroke-dasharray="3,2" stroke-width="1"></path>
 <!-- title -->
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="800" text-anchor="middle" x="210" y="250">AUDIO[] → timing único → áudio e animação sempre batidos</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="9" font-weight="800" text-anchor="middle" x="210" y="250">AUDIO[] → timing único → áudio e animaçêo sempre batidos</text>
 <!-- pulse dots -->
 <circle class="m24-pulse" cx="20" cy="20" fill="#38bdf8" opacity=".7" r="2"></circle>
 <circle class="m24-pulse2" cx="400" cy="20" fill="#60a5fa" opacity=".7" r="2"></circle>
@@ -236,7 +236,7 @@
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
 <div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Conceito Principal</div>
 <p class="text-neutral-200 font-medium">O template já entrega CSS dark premium, background persistente (glow/grid/grain), caption layer, barra de progresso e overrides para 9:16. Você só precisa preencher <strong class="text-blue-300">4 coisas</strong>: <code>AUDIO[]</code>, <code>CAPTIONS[]</code>, <code>sceneN()</code> e <code>anim()</code>.</p>
-<p class="text-neutral-400 text-sm mt-3">Rode <code class="text-blue-300">node build-index.mjs</code> para 16:9 e <code class="text-blue-300">node build-index.mjs --vertical</code> para 9:16. Os dois escrevem <code class="text-blue-300">index.html</code> — renderize logo após cada geração.</p>
+<p class="text-neutral-400 text-sm mt-3">Rode <code class="text-blue-300">node build-index.mjs</code> para 16:9 e <code class="text-blue-300">node build-index.mjs --vertical</code> para 9:16. Os dois escrevem <code class="text-blue-300">index.html</code> — renderize logo após cada geraçêo.</p>
 </div>
 <!-- box de código: cabeçalho e imports do template -->
 <div>
@@ -250,19 +250,19 @@
 <div class="ml-4"><span class="text-blue-400">new</span> <span class="text-cyan-400">URL</span><span class="text-neutral-300">(</span><span class="text-yellow-300">"./assets/fonts/fonts.css"</span><span class="text-neutral-300">, import.meta.url), </span><span class="text-yellow-300">"utf8"</span><span class="text-neutral-300">)</span></div>
 <div class="ml-4"><span class="text-neutral-300">.</span><span class="text-cyan-400">replace</span><span class="text-neutral-300">(/\.\/fonts\//g, </span><span class="text-yellow-300">"assets/fonts/"</span><span class="text-neutral-300">);</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// Formato: padrão 16:9; passe --vertical para 9:16 (Shorts)</div>
+<div class="text-neutral-500 text-xs">// Formato: padrêo 16:9; passe --vertical para 9:16 (Shorts)</div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">VERT</span> <span class="text-neutral-300">= process.argv.includes(</span><span class="text-yellow-300">"--vertical"</span><span class="text-neutral-300">);</span></div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">W</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1080</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1920</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">H</span> <span class="text-neutral-300">= VERT ? </span><span class="text-orange-400">1920</span> <span class="text-neutral-300">: </span><span class="text-orange-400">1080</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">OUT</span> <span class="text-neutral-300">= </span><span class="text-yellow-300">"index.html"</span><span class="text-neutral-300">; </span><span class="text-neutral-500">// sempre index.html</span></div>
 </div>
 </div>
-<!-- grid FAZER / NÃO FAZER -->
+<!-- grid FAZER / NêO FAZER -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3">✓ Boas práticas ao criar build-index.mjs</div>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Copie o template inteiro — não crie do zero</li>
+<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Copie o template inteiro — nêo crie do zero</li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Mantenha a cena 9 (CTA INEMA.CLUB) inalterada</li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Renderize imediatamente após cada <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">node build-index.mjs</code></li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Use <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">writeFileSync</code> para <code class="text-emerald-300 bg-dark-700 px-1 rounded text-xs">index.html</code> — o template já faz isso</li>
@@ -271,10 +271,10 @@
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4">
 <div class="text-red-400 font-semibold text-sm mb-3">✗ Armadilhas comuns</div>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Não edite <code class="text-red-300 bg-dark-700 px-1 rounded text-xs">index.html</code> diretamente — ele será sobrescrito</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Não use Google Fonts CDN — some no render headless</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Não remova a cena 9 de CTA — é a assinatura padrão</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Não misture <code class="text-red-300 bg-dark-700 px-1 rounded text-xs">--vertical</code> e 16:9 sem re-rodar o gerador</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nêo edite <code class="text-red-300 bg-dark-700 px-1 rounded text-xs">index.html</code> diretamente — ele será sobrescrito</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nêo use Google Fonts CDN — some no render headless</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nêo remova a cena 9 de CTA — é a assinatura padrêo</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nêo misture <code class="text-red-300 bg-dark-700 px-1 rounded text-xs">--vertical</code> e 16:9 sem re-rodar o gerador</li>
 </ul>
 </div>
 </div>
@@ -306,15 +306,15 @@
 <div class="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0 text-blue-400 font-bold text-lg">2</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🔢 AUDIO[] — durações REAIS medidas por ffprobe</h2>
-<p class="text-neutral-400 mt-2">O array <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> é a única entrada de dados de timing de todo o projeto. Cada elemento é a duração em segundos do WAV de narração da cena correspondente, incluindo a cena 9 de CTA.</p>
+<p class="text-neutral-400 mt-2">O array <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> é a única entrada de dados de timing de todo o projeto. Cada elemento é a duraçêo em segundos do WAV de narraçêo da cena correspondente, incluindo a cena 9 de CTA.</p>
 </div>
 </div>
 </div>
 <div class="p-6 space-y-6">
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
-<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Por que usar ffprobe e não estimar?</div>
-<p class="text-neutral-200 font-medium">A duração de um WAV gerado pelo Kokoro varia conforme o texto, a velocidade (<code class="text-blue-300">--speed 0.98</code>) e a fonética. Se você estimou errado, áudio e visual ficam dessincronizados para sempre. <strong class="text-blue-300">Meça sempre.</strong></p>
+<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Por que usar ffprobe e nêo estimar?</div>
+<p class="text-neutral-200 font-medium">A duraçêo de um WAV gerado pelo Kokoro varia conforme o texto, a velocidade (<code class="text-blue-300">--speed 0.98</code>) e a fonética. Se você estimou errado, áudio e visual ficam dessincronizados para sempre. <strong class="text-blue-300">Meça sempre.</strong></p>
 <p class="text-neutral-400 text-sm mt-3">O comando <code class="text-blue-300">ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 assets/audio/sN.wav</code> imprime o número exato em segundos — cole direto no array.</p>
 </div>
 <!-- box de código: AUDIO[] do template + cálculo S -->
@@ -326,7 +326,7 @@
 <div class="ml-4"><span class="text-orange-400">10.944</span><span class="text-neutral-500">,  </span><span class="text-neutral-500">// s1 — intro</span></div>
 <div class="ml-4"><span class="text-orange-400">14.464</span><span class="text-neutral-500">,  </span><span class="text-neutral-500">// s2 — pasta + arquivo</span></div>
 <div class="ml-4"><span class="text-orange-400">13.760</span><span class="text-neutral-500">,  </span><span class="text-neutral-500">// s3 — anatomia SKILL.md</span></div>
-<div class="ml-4"><span class="text-orange-400">17.237333</span><span class="text-neutral-500">, </span><span class="text-neutral-500">// s4 — divulgação progressiva</span></div>
+<div class="ml-4"><span class="text-orange-400">17.237333</span><span class="text-neutral-500">, </span><span class="text-neutral-500">// s4 — divulgaçêo progressiva</span></div>
 <div class="ml-4"><span class="text-orange-400">10.858667</span><span class="text-neutral-500">, </span><span class="text-neutral-500">// s5 — onde vivem</span></div>
 <div class="ml-4"><span class="text-orange-400">13.525333</span><span class="text-neutral-500">, </span><span class="text-neutral-500">// s6 — nível avançado</span></div>
 <div class="ml-4"><span class="text-orange-400">11.114667</span><span class="text-neutral-500">, </span><span class="text-neutral-500">// s7 — exemplo real</span></div>
@@ -334,7 +334,7 @@
 <div class="ml-4"><span class="text-orange-400">3.840</span><span class="text-neutral-500"> </span><span class="text-neutral-500">// s9 — CTA inema.club</span></div>
 <div><span class="text-neutral-300">];</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// Constantes de timing — NÃO alterar</div>
+<div class="text-neutral-500 text-xs">// Constantes de timing — NêO alterar</div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">LEAD</span> <span class="text-neutral-300">= </span><span class="text-orange-400">0.5</span><span class="text-neutral-300">;</span> <span class="text-neutral-500">// visual estabelece antes da voz</span></div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">TAIL</span> <span class="text-neutral-300">= </span><span class="text-orange-400">0.9</span><span class="text-neutral-300">;</span> <span class="text-neutral-500">// segura depois da voz</span></div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">FADE</span> <span class="text-neutral-300">= </span><span class="text-orange-400">0.45</span><span class="text-neutral-300">;</span> <span class="text-neutral-500">// fade in/out do scene-inner</span></div>
@@ -393,7 +393,7 @@
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">📏</div><div class="text-xs font-semibold text-neutral-200">ffprobe</div><div class="text-xs text-neutral-500">Medição exata</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">📏</div><div class="text-xs font-semibold text-neutral-200">ffprobe</div><div class="text-xs text-neutral-500">Mediçêo exata</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">⏱️</div><div class="text-xs font-semibold text-neutral-200">LEAD=0.5</div><div class="text-xs text-neutral-500">Visual antes da voz</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🔚</div><div class="text-xs font-semibold text-neutral-200">TAIL=0.9</div><div class="text-xs text-neutral-500">Segura após voz</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🎯</div><div class="text-xs font-semibold text-neutral-200">s9 = CTA</div><div class="text-xs text-neutral-500">Sempre incluído</div></div>
@@ -408,7 +408,7 @@
 <div class="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0 text-blue-400 font-bold text-lg">3</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">🎨 sceneN() — HTML de cada cena</h2>
-<p class="text-neutral-400 mt-2">Cada cena é uma função JavaScript que retorna uma string HTML. O conteúdo é inserido em <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;div class="scene-inner"&gt;</code>, dentro de um <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;section class="scene clip"&gt;</code> com atributos de timing calculados a partir de <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code>.</p>
+<p class="text-neutral-400 mt-2">Cada cena é uma funçêo JavaScript que retorna uma string HTML. O conteúdo é inserido em <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;div class="scene-inner"&gt;</code>, dentro de um <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;section class="scene clip"&gt;</code> com atributos de timing calculados a partir de <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code>.</p>
 </div>
 </div>
 </div>
@@ -416,7 +416,7 @@
 <!-- Conceito principal: estrutura .scene .clip -->
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
 <div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Estrutura gerada pelo template para cada cena</div>
-<p class="text-neutral-200 font-medium">A montagem transforma cada item de <code class="text-blue-300">S</code> (array derivado de <code class="text-blue-300">AUDIO[]</code>) em um <code class="text-blue-300">&lt;section&gt;</code> com três atributos críticos: <code class="text-blue-300">data-start</code>, <code class="text-blue-300">data-duration</code> e <code class="text-blue-300">data-track-index</code>. Tracks alternados (1/3) evitam sobreposição nas bordas de cena.</p>
+<p class="text-neutral-200 font-medium">A montagem transforma cada item de <code class="text-blue-300">S</code> (array derivado de <code class="text-blue-300">AUDIO[]</code>) em um <code class="text-blue-300">&lt;section&gt;</code> com três atributos críticos: <code class="text-blue-300">data-start</code>, <code class="text-blue-300">data-duration</code> e <code class="text-blue-300">data-track-index</code>. Tracks alternados (1/3) evitam sobreposiçêo nas bordas de cena.</p>
 </div>
 <!-- box de código: montagem das cenas no template -->
 <div>
@@ -455,11 +455,11 @@
 <div class="ml-4"><span class="text-yellow-300">`</span><span class="text-neutral-300">;</span></div>
 <div><span class="text-neutral-300">}</span></div>
 <br/>
-<div class="text-neutral-500 text-xs">// BODIES = lista ordenada das funções (scene9 = CTA, não remover)</div>
+<div class="text-neutral-500 text-xs">// BODIES = lista ordenada das funções (scene9 = CTA, nêo remover)</div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">BODIES</span> <span class="text-neutral-300">= [scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9];</span></div>
 </div>
 </div>
-<!-- grid FAZER/NÃO FAZER para sceneN -->
+<!-- grid FAZER/NêO FAZER para sceneN -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3">✓ Boas práticas de sceneN()</div>
@@ -499,22 +499,22 @@
 <div class="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0 text-blue-400 font-bold text-lg">4</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">✨ anim(i,t) — tweens GSAP por cena</h2>
-<p class="text-neutral-400 mt-2">A função <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">anim(i, t)</code> recebe o índice da cena e o instante de início absoluto. Ela empurra strings de código GSAP para um array local que depois é concatenado no <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;script&gt;</code> do HTML gerado.</p>
+<p class="text-neutral-400 mt-2">A funçêo <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">anim(i, t)</code> recebe o índice da cena e o instante de início absoluto. Ela empurra strings de código GSAP para um array local que depois é concatenado no <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;script&gt;</code> do HTML gerado.</p>
 </div>
 </div>
 </div>
 <div class="p-6 space-y-6">
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
-<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Por que gerar código como string e não executar diretamente?</div>
-<p class="text-neutral-200 font-medium">O gerador roda em Node.js mas o GSAP executa no browser (Chrome headless). <code class="text-blue-300">anim()</code> constrói strings de código que serão embutidas no HTML — quando o browser carregar, essas strings já têm os tempos absolutos calculados a partir de <code class="text-blue-300">AUDIO[]</code>.</p>
+<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Por que gerar código como string e nêo executar diretamente?</div>
+<p class="text-neutral-200 font-medium">O gerador roda em Node.js mas o GSAP executa no browser (Chrome headless). <code class="text-blue-300">anim()</code> constrói strings de código que serêo embutidas no HTML — quando o browser carregar, essas strings já têm os tempos absolutos calculados a partir de <code class="text-blue-300">AUDIO[]</code>.</p>
 <p class="text-neutral-400 text-sm mt-3">A helper <code class="text-blue-300">at(d)</code> (atalho para <code class="text-blue-300">round(t + d)</code>) calcula offset relativo ao início da cena. Use ela em todos os tweens para manter o código legível.</p>
 </div>
 <!-- box de código: anim() entrada/saída + case 1 -->
 <div>
-<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">anim() — padrão de entrada/saída do scene-inner + caso 1</div>
+<div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">anim() — padrêo de entrada/saída do scene-inner + caso 1</div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-4 font-mono text-sm overflow-x-auto">
-<div class="text-neutral-500 text-xs mb-3">// composition-template.mjs — função anim()</div>
+<div class="text-neutral-500 text-xs mb-3">// composition-template.mjs — funçêo anim()</div>
 <div><span class="text-blue-400">function</span> <span class="text-cyan-400">anim</span><span class="text-neutral-300">(i, t) {</span></div>
 <div class="ml-4"><span class="text-blue-400">const</span> <span class="text-cyan-400">L</span> <span class="text-neutral-300">= [];</span></div>
 <div class="ml-4"><span class="text-blue-400">const</span> <span class="text-cyan-400">P</span> <span class="text-neutral-300">= (s) =&gt; L.push(s);</span></div>
@@ -552,16 +552,16 @@
 <div class="rounded-xl bg-blue-500/10 border border-blue-500/30 p-4 flex gap-3">
 <span class="text-blue-400 text-xl flex-shrink-0">💡</span>
 <div>
-<div class="text-blue-400 font-semibold text-sm mb-1">Regras de ouro de animação</div>
-<p class="text-neutral-400 text-sm">1. Animar sempre o <code class="text-blue-300">.scene-inner</code>, nunca o <code class="text-blue-300">.clip</code> wrapper. 2. Usar tempos absolutos calculados por <code class="text-blue-300">at(d)</code> — jamais hardcodar números. 3. O <code class="text-blue-300">FADE=0.45</code> é o mesmo para entrada e saída de todas as cenas, garantindo transição uniforme.</p>
+<div class="text-blue-400 font-semibold text-sm mb-1">Regras de ouro de animaçêo</div>
+<p class="text-neutral-400 text-sm">1. Animar sempre o <code class="text-blue-300">.scene-inner</code>, nunca o <code class="text-blue-300">.clip</code> wrapper. 2. Usar tempos absolutos calculados por <code class="text-blue-300">at(d)</code> — jamais hardcodar números. 3. O <code class="text-blue-300">FADE=0.45</code> é o mesmo para entrada e saída de todas as cenas, garantindo transiçêo uniforme.</p>
 </div>
 </div>
 <!-- box alerta -->
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4 flex gap-3">
 <span class="text-red-400 text-xl flex-shrink-0">⚠️</span>
 <div>
-<div class="text-red-400 font-semibold text-sm mb-1">Cenas em tracks alternados — não é opcional</div>
-<p class="text-neutral-400 text-sm">Cenas ímpares ficam em <code class="text-red-300">data-track-index="1"</code> e pares em <code class="text-red-300">data-track-index="3"</code>. Captions seguem o mesmo padrão (2/4). Isso evita o "overlap de borda" onde dois frames de cenas adjacentes aparecem simultaneamente — erro clássico descrito em <code class="text-red-300">references/gotchas.md</code>.</p>
+<div class="text-red-400 font-semibold text-sm mb-1">Cenas em tracks alternados — nêo é opcional</div>
+<p class="text-neutral-400 text-sm">Cenas ímpares ficam em <code class="text-red-300">data-track-index="1"</code> e pares em <code class="text-red-300">data-track-index="3"</code>. Captions seguem o mesmo padrêo (2/4). Isso evita o "overlap de borda" onde dois frames de cenas adjacentes aparecem simultaneamente — erro clássico descrito em <code class="text-red-300">references/gotchas.md</code>.</p>
 </div>
 </div>
 <!-- mini-grid conceitos-chave -->
@@ -570,7 +570,7 @@
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">✨</div><div class="text-xs font-semibold text-neutral-200">fromTo / from</div><div class="text-xs text-neutral-500">Tweens GSAP</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🕐</div><div class="text-xs font-semibold text-neutral-200">at(d) helper</div><div class="text-xs text-neutral-500">Offset relativo</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🔀</div><div class="text-xs font-semibold text-neutral-200">FADE=0.45</div><div class="text-xs text-neutral-500">Transição uniforme</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🔀</div><div class="text-xs font-semibold text-neutral-200">FADE=0.45</div><div class="text-xs text-neutral-500">Transiçêo uniforme</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🧱</div><div class="text-xs font-semibold text-neutral-200">switch(i)</div><div class="text-xs text-neutral-500">Tweens por cena</div></div>
 </div>
 </div>
@@ -590,9 +590,9 @@
 <div class="p-6 space-y-6">
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
-<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Legenda como reforço cognitivo, não como transcrição</div>
-<p class="text-neutral-200 font-medium">Uma boa caption captura a <strong class="text-blue-300">ideia central</strong> da cena em 5–10 palavras — não transcreve o áudio. O espectador que assiste sem som deve entender o ponto de cada cena só pela legenda + visual.</p>
-<p class="text-neutral-400 text-sm mt-3">A caption roda em <code class="text-blue-300">data-track-index="2"</code> (cenas ímpares) ou <code class="text-blue-300">"4"</code> (pares) — tracks alternados para evitar sobreposição com a cena anterior na borda de transição.</p>
+<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Legenda como reforço cognitivo, nêo como transcriçêo</div>
+<p class="text-neutral-200 font-medium">Uma boa caption captura a <strong class="text-blue-300">ideia central</strong> da cena em 5–10 palavras — nêo transcreve o áudio. O espectador que assiste sem som deve entender o ponto de cada cena só pela legenda + visual.</p>
+<p class="text-neutral-400 text-sm mt-3">A caption roda em <code class="text-blue-300">data-track-index="2"</code> (cenas ímpares) ou <code class="text-blue-300">"4"</code> (pares) — tracks alternados para evitar sobreposiçêo com a cena anterior na borda de transiçêo.</p>
 </div>
 <!-- box de código: CAPTIONS + captionsHTML -->
 <div>
@@ -603,7 +603,7 @@
 <div class="ml-4"><span class="text-yellow-300">"Skills no Claude Code — do básico ao avançado"</span><span class="text-neutral-300">,</span></div>
 <div class="ml-4"><span class="text-yellow-300">"Uma Skill = uma pasta + um arquivo SKILL.md"</span><span class="text-neutral-300">,</span></div>
 <div class="ml-4"><span class="text-yellow-300">"name + description — a description é o gatilho"</span><span class="text-neutral-300">,</span></div>
-<div class="ml-4"><span class="text-yellow-300">"Divulgação progressiva: carrega só quando precisa"</span><span class="text-neutral-300">,</span></div>
+<div class="ml-4"><span class="text-yellow-300">"Divulgaçêo progressiva: carrega só quando precisa"</span><span class="text-neutral-300">,</span></div>
 <div class="ml-4"><span class="text-yellow-300">"Onde vivem: .claude/skills (projeto ou global)"</span><span class="text-neutral-300">,</span></div>
 <div class="ml-4"><span class="text-yellow-300">"Avançado: scripts, referências e templates"</span><span class="text-neutral-300">,</span></div>
 <div class="ml-4"><span class="text-yellow-300">"Este vídeo foi feito pela Skill HyperFrames"</span><span class="text-neutral-300">,</span></div>
@@ -636,7 +636,7 @@
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4">
 <div class="text-red-400 font-semibold text-sm mb-3">✗ Captions ruins</div>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Transcrição literal do áudio (longo demais)</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Transcriçêo literal do áudio (longo demais)</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Vagos: "uma ideia importante sobre o tema"</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Caps inteira — dificulta leitura rápida</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Comprimento diferente de AUDIO[] (vai causar erro)</li>
@@ -648,7 +648,7 @@
 <span class="text-cyan-400 text-xl flex-shrink-0">💡</span>
 <div>
 <div class="text-cyan-400 font-semibold text-sm mb-1">Caption como indexador do vídeo</div>
-<p class="text-neutral-400 text-sm">No YouTube, as captions são indexadas pelo buscador. Captions precisas com termos técnicos corretos (<code class="text-blue-300">ffprobe</code>, <code class="text-blue-300">GSAP</code>, <code class="text-blue-300">build-index.mjs</code>) melhoram o ranqueamento do vídeo para buscas técnicas.</p>
+<p class="text-neutral-400 text-sm">No YouTube, as captions sêo indexadas pelo buscador. Captions precisas com termos técnicos corretos (<code class="text-blue-300">ffprobe</code>, <code class="text-blue-300">GSAP</code>, <code class="text-blue-300">build-index.mjs</code>) melhoram o ranqueamento do vídeo para buscas técnicas.</p>
 </div>
 </div>
 <!-- mini-grid conceitos-chave -->
@@ -669,7 +669,7 @@
 <div class="flex items-start space-x-4">
 <div class="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0 text-blue-400 font-bold text-lg">6</div>
 <div>
-<h2 class="text-xl font-bold flex items-center gap-2">⏱️ Timing fonte-única — áudio e animação sempre batidos</h2>
+<h2 class="text-xl font-bold flex items-center gap-2">⏱️ Timing fonte-única — áudio e animaçêo sempre batidos</h2>
 <p class="text-neutral-400 mt-2">O princípio mais importante do <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">composition-template</code>: <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">AUDIO[]</code> gera tudo — <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">data-start</code>, <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">data-duration</code>, os tempos dos tweens GSAP <em>e</em> os atributos do <code class="text-blue-400 bg-dark-700 px-1 rounded text-sm">&lt;audio&gt;</code>. Nenhum número é duplicado nem hardcoded em outro lugar.</p>
 </div>
 </div>
@@ -677,8 +677,8 @@
 <div class="p-6 space-y-6">
 <!-- Conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-blue-900/30 to-dark-700/50 border border-blue-500/30 p-5">
-<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Fonte única de verdade — definição formal</div>
-<p class="text-neutral-200 font-medium">As três constantes <code class="text-blue-300">LEAD=0.5</code>, <code class="text-blue-300">TAIL=0.9</code> e <code class="text-blue-300">FADE=0.45</code> combinadas com os valores em <code class="text-blue-300">AUDIO[]</code> determinam o tempo de início, duração e fade de cada cena — e portanto o tempo exato de todos os tweens GSAP. Alterar um valor em <code class="text-blue-300">AUDIO[]</code> propaga automaticamente para tudo.</p>
+<div class="text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">Fonte única de verdade — definiçêo formal</div>
+<p class="text-neutral-200 font-medium">As três constantes <code class="text-blue-300">LEAD=0.5</code>, <code class="text-blue-300">TAIL=0.9</code> e <code class="text-blue-300">FADE=0.45</code> combinadas com os valores em <code class="text-blue-300">AUDIO[]</code> determinam o tempo de início, duraçêo e fade de cada cena — e portanto o tempo exato de todos os tweens GSAP. Alterar um valor em <code class="text-blue-300">AUDIO[]</code> propaga automaticamente para tudo.</p>
 <p class="text-neutral-400 text-sm mt-3">Fórmulas: <span class="text-blue-300 font-mono">dur = LEAD + audioDur + TAIL</span> · <span class="text-blue-300 font-mono">audioStart = start + LEAD</span> · Tween de entrada = <span class="text-blue-300 font-mono">t</span> · Tween de saída = <span class="text-blue-300 font-mono">end - FADE</span>.</p>
 </div>
 <!-- box de código: o fluxo completo da fonte única -->
@@ -688,7 +688,7 @@
 <div class="text-neutral-500 text-xs mb-3">// TUDO deriva de AUDIO[] + LEAD/TAIL/FADE — nunca duplique</div>
 <div class="text-neutral-500 text-xs">// 1. Série S: cada objeto carrega todos os tempos necessários</div>
 <div><span class="text-blue-400">const</span> <span class="text-cyan-400">S</span> <span class="text-neutral-300">= AUDIO.</span><span class="text-cyan-400">map</span><span class="text-neutral-300">((a, i) =&gt; {</span></div>
-<div class="ml-4"><span class="text-blue-400">const</span> <span class="text-cyan-400">dur</span> <span class="text-neutral-300">= LEAD + a + TAIL;         </span><span class="text-neutral-500">// duração total da cena</span></div>
+<div class="ml-4"><span class="text-blue-400">const</span> <span class="text-cyan-400">dur</span> <span class="text-neutral-300">= LEAD + a + TAIL;         </span><span class="text-neutral-500">// duraçêo total da cena</span></div>
 <div class="ml-4"><span class="text-blue-400">return</span> <span class="text-neutral-300">{</span></div>
 <div class="ml-6"><span class="text-cyan-400">i</span><span class="text-neutral-300">:          i + </span><span class="text-orange-400">1</span><span class="text-neutral-300">,</span></div>
 <div class="ml-6"><span class="text-cyan-400">start</span><span class="text-neutral-300">:      round(t),           </span><span class="text-neutral-500">// → data-start</span></div>
@@ -712,11 +712,11 @@
 </div>
 <!-- tabela visual de fórmulas -->
 <div class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
-<div class="text-blue-400 font-semibold text-sm mb-4">📐 Fórmulas de timing — cartão de referência rápida</div>
+<div class="text-blue-400 font-semibold text-sm mb-4">📐 Fórmulas de timing — cartêo de referência rápida</div>
 <div class="grid sm:grid-cols-2 gap-4 text-sm">
 <div class="space-y-3">
 <div class="bg-dark-700/60 rounded-lg p-3">
-<div class="text-xs text-neutral-500 mb-1">Duração de cada cena</div>
+<div class="text-xs text-neutral-500 mb-1">Duraçêo de cada cena</div>
 <div class="font-mono text-blue-300">dur = LEAD + audioDur + TAIL</div>
 <div class="text-xs text-neutral-500 mt-1">= 0.5 + medido + 0.9</div>
 </div>
@@ -733,14 +733,14 @@
 <div class="text-xs text-neutral-500 mt-1">= end - 0.45</div>
 </div>
 <div class="bg-dark-700/60 rounded-lg p-3">
-<div class="text-xs text-neutral-500 mb-1">Duração total da composição</div>
+<div class="text-xs text-neutral-500 mb-1">Duraçêo total da composiçêo</div>
 <div class="font-mono text-cyan-300">TOTAL = sum(all dur)</div>
 <div class="text-xs text-neutral-500 mt-1">Barra de progresso usa esse valor</div>
 </div>
 </div>
 </div>
 </div>
-<!-- grid FAZER / NÃO FAZER final -->
+<!-- grid FAZER / NêO FAZER final -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
 <div class="text-emerald-400 font-semibold text-sm mb-3">✓ O que a fonte única garante</div>
@@ -767,7 +767,7 @@
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🎯</div><div class="text-xs font-semibold text-neutral-200">AUDIO[] único</div><div class="text-xs text-neutral-500">Tudo deriva dele</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🔗</div><div class="text-xs font-semibold text-neutral-200">Série S</div><div class="text-xs text-neutral-500">Timing por objeto</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">⚡</div><div class="text-xs font-semibold text-neutral-200">round(n)</div><div class="text-xs text-neutral-500">Precisão ms</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">⚡</div><div class="text-xs font-semibold text-neutral-200">round(n)</div><div class="text-xs text-neutral-500">Precisêo ms</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-blue-400 text-lg mb-1">🔄</div><div class="text-xs font-semibold text-neutral-200">Propaga tudo</div><div class="text-xs text-neutral-500">Mude AUDIO[], rode</div></div>
 </div>
 </div>

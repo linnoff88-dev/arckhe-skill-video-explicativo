@@ -233,7 +233,7 @@
 <div class="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center flex-shrink-0 text-emerald-400 font-bold text-lg">1</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">📑 Frontmatter YAML</h2>
-<p class="text-neutral-400 mt-2">O frontmatter é o bloco de metadados que fica no topo do <code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">SKILL.md</code>. Ele é delimitado por duas linhas de três hifens (<code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">---</code>) e contém pares chave-valor em formato YAML. Sem esse bloco, o Claude Code não reconhece o arquivo como um skill válido.</p>
+<p class="text-neutral-400 mt-2">O frontmatter é o bloco de metadados que fica no topo do <code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">SKILL.md</code>. Ele é delimitado por duas linhas de três hifens (<code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">---</code>) e contém pares chave-valor em formato YAML. Sem esse bloco, o Claude Code nêo reconhece o arquivo como um skill válido.</p>
 </div>
 </div>
 </div>
@@ -241,8 +241,8 @@
 <!-- conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-emerald-900/30 to-dark-700/50 border border-emerald-500/30 p-5">
 <div class="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-2">Conceito Principal</div>
-<p class="text-neutral-200 font-medium">O frontmatter YAML são exatamente as linhas entre o primeiro <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> e o segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code>. Tudo o que vem depois do segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> é o corpo do skill em Markdown puro.</p>
-<p class="text-neutral-400 text-sm mt-3">É a primeira coisa que o harness do Claude Code lê — se o YAML estiver malformado, o skill não carrega.</p>
+<p class="text-neutral-200 font-medium">O frontmatter YAML sêo exatamente as linhas entre o primeiro <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> e o segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code>. Tudo o que vem depois do segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> é o corpo do skill em Markdown puro.</p>
+<p class="text-neutral-400 text-sm mt-3">É a primeira coisa que o harness do Claude Code lê — se o YAML estiver malformado, o skill nêo carrega.</p>
 </div>
 <!-- Box de código: frontmatter YAML real -->
 <div>
@@ -255,7 +255,7 @@
 <pre class="p-4 text-sm font-mono text-neutral-300 leading-relaxed"><code class="block">---
 name: video-explicativo
 description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
-  HyperFrames) a partir de um assunto — roteiro, narração TTS local,
+  HyperFrames) a partir de um assunto — roteiro, narraçêo TTS local,
   cenas animadas dark premium, captions e CTA do INEMA.CLUB, nos
   formatos 16:9 (YouTube) e 9:16 (Shorts/Reels). Use quando o usuário
   pedir para "fazer um vídeo", "vídeo explicativo", "vídeo sobre X",
@@ -269,7 +269,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <span class="text-2xl flex-shrink-0">💡</span>
 <div>
 <div class="font-semibold text-neutral-200 mb-1">O YAML precisa de apenas 2 campos</div>
-<p class="text-sm text-neutral-400">O frontmatter mínimo válido contém somente <code class="text-emerald-300 bg-dark-700 px-1 rounded">name</code> e <code class="text-emerald-300 bg-dark-700 px-1 rounded">description</code>. Campos extras são ignorados pelo harness atual.</p>
+<p class="text-sm text-neutral-400">O frontmatter mínimo válido contém somente <code class="text-emerald-300 bg-dark-700 px-1 rounded">name</code> e <code class="text-emerald-300 bg-dark-700 px-1 rounded">description</code>. Campos extras sêo ignorados pelo harness atual.</p>
 </div>
 </div>
 <!-- mini-grid conceitos-chave -->
@@ -317,7 +317,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="flex gap-4 items-start">
 <div class="w-8 h-8 rounded-full bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center flex-shrink-0 text-cyan-400 font-bold text-sm">3</div>
 <div class="flex-1 bg-dark-700/40 rounded-lg p-3 border border-dark-600">
-<div class="font-semibold text-neutral-200 text-sm">Invocação via Skill tool</div>
+<div class="font-semibold text-neutral-200 text-sm">Invocaçêo via Skill tool</div>
 <p class="text-xs text-neutral-400 mt-1">Quando o Claude decide usar o skill, ele chama <code class="text-cyan-300 bg-dark-700 px-1 rounded">Skill(skill: "video-explicativo")</code> — o valor é exatamente o <code class="text-cyan-300 bg-dark-700 px-1 rounded">name</code>.</p>
 </div>
 </div>
@@ -344,10 +344,10 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4">
 <div class="text-red-400 font-semibold text-sm mb-3">✗ Nomes problemáticos</div>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> <code class="bg-dark-700 px-1 rounded">VideoExplicativo</code> — camelCase não permitido</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> <code class="bg-dark-700 px-1 rounded">VideoExplicativo</code> — camelCase nêo permitido</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> <code class="bg-dark-700 px-1 rounded">video explicativo</code> — espaço quebra o lookup</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> <code class="bg-dark-700 px-1 rounded">video_explicativo</code> — underscore não é padrão</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nome diferente da pasta = skill não carrega</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> <code class="bg-dark-700 px-1 rounded">video_explicativo</code> — underscore nêo é padrêo</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nome diferente da pasta = skill nêo carrega</li>
 </ul>
 </div>
 </div>
@@ -355,7 +355,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div>
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">🐍</div><div class="text-xs font-semibold text-neutral-200">kebab-case</div><div class="text-xs text-neutral-500">Padrão obrigatório</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">🐍</div><div class="text-xs font-semibold text-neutral-200">kebab-case</div><div class="text-xs text-neutral-500">Padrêo obrigatório</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">📁</div><div class="text-xs font-semibold text-neutral-200">= pasta</div><div class="text-xs text-neutral-500">Deve ser idêntico</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">/</div><div class="text-xs font-semibold text-neutral-200">Slash command</div><div class="text-xs text-neutral-500">/nome-do-skill</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔎</div><div class="text-xs font-semibold text-neutral-200">Lookup direto</div><div class="text-xs text-neutral-500">Harness usa o name</div></div>
@@ -369,8 +369,8 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="flex items-start space-x-4">
 <div class="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center flex-shrink-0 text-emerald-400 font-bold text-lg">3</div>
 <div>
-<h2 class="text-xl font-bold flex items-center gap-2">🎣 description = gatilho de ativação</h2>
-<p class="text-neutral-400 mt-2">A <code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">description</code> é a parte <strong class="text-neutral-200">mais importante</strong> do SKILL.md. É o único campo que o Claude lê para decidir, em tempo real, se deve ou não invocar o skill. Pense nela como o <em>rótulo da embalagem</em>: se o rótulo não descrever o que está dentro, o Claude pega a embalagem errada.</p>
+<h2 class="text-xl font-bold flex items-center gap-2">🎣 description = gatilho de ativaçêo</h2>
+<p class="text-neutral-400 mt-2">A <code class="text-emerald-400 bg-dark-700 px-1 rounded text-sm">description</code> é a parte <strong class="text-neutral-200">mais importante</strong> do SKILL.md. É o único campo que o Claude lê para decidir, em tempo real, se deve ou nêo invocar o skill. Pense nela como o <em>rótulo da embalagem</em>: se o rótulo nêo descrever o que está dentro, o Claude pega a embalagem errada.</p>
 </div>
 </div>
 </div>
@@ -387,11 +387,11 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="text-center">
 <div class="text-3xl mb-2">⚖️</div>
 <div class="font-semibold text-neutral-200 mb-1">Match semântico</div>
-<p class="text-neutral-400 text-xs">Claude compara a mensagem do usuário com as descriptions e decide qual skill tem maior sobreposição semântica.</p>
+<p class="text-neutral-400 text-xs">Claude compara a mensagem do usuário com as descriptions e decide qual skill tem maior sobreposiçêo semântica.</p>
 </div>
 <div class="text-center">
 <div class="text-3xl mb-2">🚀</div>
-<div class="font-semibold text-neutral-200 mb-1">Invocação automática</div>
+<div class="font-semibold text-neutral-200 mb-1">Invocaçêo automática</div>
 <p class="text-neutral-400 text-xs">Quando há match, Claude chama a Skill tool antes de qualquer outra resposta — a description é lei.</p>
 </div>
 </div>
@@ -410,7 +410,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">🎣</div><div class="text-xs font-semibold text-neutral-200">Gatilho</div><div class="text-xs text-neutral-500">Dispara o skill</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔍</div><div class="text-xs font-semibold text-neutral-200">Match semântico</div><div class="text-xs text-neutral-500">Claude compara</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">⚡</div><div class="text-xs font-semibold text-neutral-200">Antes de tudo</div><div class="text-xs text-neutral-500">Invocação obrigatória</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">⚡</div><div class="text-xs font-semibold text-neutral-200">Antes de tudo</div><div class="text-xs text-neutral-500">Invocaçêo obrigatória</div></div>
 </div>
 </div>
 </div>
@@ -433,13 +433,13 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="space-y-3">
 <div class="rounded-xl border border-emerald-500/30 bg-dark-900/60 p-4">
 <div class="text-xs text-emerald-400 font-semibold mb-2">Parte 1 — O que o skill faz</div>
-<p class="text-sm font-mono text-neutral-300 bg-dark-700 rounded p-3 leading-relaxed">Cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto — roteiro, narração TTS local, cenas animadas dark premium, captions e CTA do INEMA.CLUB, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels).</p>
+<p class="text-sm font-mono text-neutral-300 bg-dark-700 rounded p-3 leading-relaxed">Cria vídeos explicativos completos em PT-BR (HTML→MP4 via HyperFrames) a partir de um assunto — roteiro, narraçêo TTS local, cenas animadas dark premium, captions e CTA do INEMA.CLUB, nos formatos 16:9 (YouTube) e 9:16 (Shorts/Reels).</p>
 <p class="text-xs text-neutral-500 mt-2">Especifica o output (<em>vídeos em PT-BR</em>), o mecanismo (<em>HTML→MP4</em>) e os sub-produtos (<em>roteiro, TTS, captions, CTA</em>).</p>
 </div>
 <div class="rounded-xl border border-cyan-500/30 bg-dark-900/60 p-4">
 <div class="text-xs text-cyan-400 font-semibold mb-2">Parte 2 — Frases-gatilho (a parte mais importante)</div>
 <p class="text-sm font-mono text-neutral-300 bg-dark-700 rounded p-3 leading-relaxed">Use quando o usuário pedir para "fazer um vídeo", "vídeo explicativo", "vídeo sobre X", "vídeo pra Shorts/Reels", "mini tutorial em vídeo", "vídeo do INEMA", ou quando der um assunto e quiser um vídeo narrado pronto.</p>
-<p class="text-xs text-neutral-500 mt-2">São citações literais de como o usuário pediria — com aspas, variações de linguagem e casos de uso distintos.</p>
+<p class="text-xs text-neutral-500 mt-2">Sêo citações literais de como o usuário pediria — com aspas, variações de linguagem e casos de uso distintos.</p>
 </div>
 </div>
 </div>
@@ -451,7 +451,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Inclui frases que o usuário literalmente digita</li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Tem sinônimos: "vídeo", "tutorial em vídeo", "mini-vídeo"</li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Cobre variações de canal: YouTube, Shorts, Reels</li>
-<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Menciona o output concreto: MP4, narração, captions</li>
+<li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Menciona o output concreto: MP4, narraçêo, captions</li>
 <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Usa "Use quando o usuário pedir X, Y, Z"</li>
 </ul>
 </div>
@@ -459,9 +459,9 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="text-red-400 font-semibold text-sm mb-3">✗ Description fraca</div>
 <ul class="space-y-2 text-sm text-neutral-300">
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> "Cria vídeos." — vago demais, sem gatilhos</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Só explica o "como", não o "quando usar"</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Usa jargão técnico que o usuário nunca digitaria</li>
-<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Não lista as variações de pedido possíveis</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Só explica o "como", nêo o "quando usar"</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Usa jargêo técnico que o usuário nunca digitaria</li>
+<li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Nêo lista as variações de pedido possíveis</li>
 <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">✗</span> Uma linha só — cobertura semântica mínima</li>
 </ul>
 </div>
@@ -471,7 +471,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <span class="text-2xl flex-shrink-0">🎯</span>
 <div>
 <div class="font-semibold text-neutral-200 mb-1">Teste mental: "o usuário diria isso?"</div>
-<p class="text-sm text-neutral-400">Para cada frase-gatilho que você escreve, pergunte: <em>"Um usuário real, sem saber que esse skill existe, digitaria essa frase?"</em> Se a resposta for sim, é um bom gatilho. Palavras técnicas internas ao sistema são péssimos gatilhos.</p>
+<p class="text-sm text-neutral-400">Para cada frase-gatilho que você escreve, pergunte: <em>"Um usuário real, sem saber que esse skill existe, digitaria essa frase?"</em> Se a resposta for sim, é um bom gatilho. Palavras técnicas internas ao sistema sêo péssimos gatilhos.</p>
 </div>
 </div>
 <!-- mini-grid conceitos-chave -->
@@ -481,7 +481,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">📢</div><div class="text-xs font-semibold text-neutral-200">Frase-gatilho</div><div class="text-xs text-neutral-500">O que o user diz</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔄</div><div class="text-xs font-semibold text-neutral-200">Sinônimos</div><div class="text-xs text-neutral-500">Aumenta cobertura</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">📌</div><div class="text-xs font-semibold text-neutral-200">Casos de uso</div><div class="text-xs text-neutral-500">Cenários concretos</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🚫</div><div class="text-xs font-semibold text-neutral-200">Sem jargão</div><div class="text-xs text-neutral-500">Linguagem do user</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🚫</div><div class="text-xs font-semibold text-neutral-200">Sem jargêo</div><div class="text-xs text-neutral-500">Linguagem do user</div></div>
 </div>
 </div>
 </div>
@@ -501,7 +501,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <!-- conceito principal -->
 <div class="rounded-xl bg-gradient-to-br from-emerald-900/30 to-dark-700/50 border border-emerald-500/30 p-5">
 <div class="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-2">Conceito Principal</div>
-<p class="text-neutral-200 font-medium">O corpo do SKILL.md é o <em>script de execução</em> do Claude. Se a description é o gatilho, o corpo é a instrução de operação. O Claude segue o corpo como um checklist: lê, entende e executa cada etapa em ordem.</p>
+<p class="text-neutral-200 font-medium">O corpo do SKILL.md é o <em>script de execuçêo</em> do Claude. Se a description é o gatilho, o corpo é a instruçêo de operaçêo. O Claude segue o corpo como um checklist: lê, entende e executa cada etapa em ordem.</p>
 </div>
 <!-- estrutura típica do corpo -->
 <div>
@@ -523,14 +523,14 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
    princípio ao avançado, com exemplo real.
 2. **Projeto** — `npx hyperframes init &lt;nome&gt; --example blank`
 3. **Fontes** — `node fetch-fonts.mjs`
-4. **Narração** — gere WAVs com Kokoro, voz `pf_dora`
-5. **Composição** — adapte `composition-template.mjs`
+4. **Narraçêo** — gere WAVs com Kokoro, voz `pf_dora`
+5. **Composiçêo** — adapte `composition-template.mjs`
 6. **Validar** — `npx hyperframes lint`
 7. **Render** — `--quality high`
 
-## Regras de ouro (não-negociáveis)
+## Regras de ouro (nêo-negociáveis)
 - Animar `.scene-inner`, nunca o wrapper `.clip`
-- Fontes locais via `@font-face` (não CDN)
+- Fontes locais via `@font-face` (nêo CDN)
 - Timing vem de AUDIO[] — fonte única de verdade</code></pre>
 </div>
 </div>
@@ -551,7 +551,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="text-xs font-semibold text-neutral-500 uppercase tracking-widest mb-3">Conceitos-chave</div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">📋</div><div class="text-xs font-semibold text-neutral-200">Checklist</div><div class="text-xs text-neutral-500">Claude executa</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">#</div><div class="text-xs font-semibold text-neutral-200">H2 por seção</div><div class="text-xs text-neutral-500">Organização clara</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">#</div><div class="text-xs font-semibold text-neutral-200">H2 por seçêo</div><div class="text-xs text-neutral-500">Organizaçêo clara</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-emerald-400 text-lg mb-1">💻</div><div class="text-xs font-semibold text-neutral-200">Comandos reais</div><div class="text-xs text-neutral-500">Exatos, copiáveis</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 text-center"><div class="text-cyan-400 text-lg mb-1">🔗</div><div class="text-xs font-semibold text-neutral-200">Referências</div><div class="text-xs text-neutral-500">Links para arquivos</div></div>
 </div>
@@ -565,7 +565,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center flex-shrink-0 text-emerald-400 font-bold text-lg">6</div>
 <div>
 <h2 class="text-xl font-bold flex items-center gap-2">⚠️ Erros comuns no SKILL.md</h2>
-<p class="text-neutral-400 mt-2">Pequenos descuidos no SKILL.md causam falhas silenciosas: o skill não carrega, não é acionado ou é acionado na hora errada. Conheça os erros mais frequentes e como evitá-los antes de publicar seu skill.</p>
+<p class="text-neutral-400 mt-2">Pequenos descuidos no SKILL.md causam falhas silenciosas: o skill nêo carrega, nêo é acionado ou é acionado na hora errada. Conheça os erros mais frequentes e como evitá-los antes de publicar seu skill.</p>
 </div>
 </div>
 </div>
@@ -574,7 +574,7 @@ description: Cria vídeos explicativos completos em PT-BR (HTML→MP4 via
 <div class="rounded-xl border border-red-500/30 bg-red-500/10 p-4 flex gap-3">
 <span class="text-2xl flex-shrink-0">🚨</span>
 <div>
-<div class="font-semibold text-red-400 mb-1">Skill não aparece no menu?</div>
+<div class="font-semibold text-red-400 mb-1">Skill nêo aparece no menu?</div>
 <p class="text-sm text-neutral-400">A causa mais comum é o frontmatter malformado. Verifique sempre: o arquivo começa com <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> na primeira linha (sem espaço antes) e há um segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> de fechamento.</p>
 </div>
 </div>
@@ -607,11 +607,11 @@ description: Faz coisas...
 </div>
 </div>
 </div>
-<!-- erro 2: indentação YAML -->
+<!-- erro 2: indentaçêo YAML -->
 <div class="rounded-xl border border-dark-600 bg-dark-700/30 overflow-hidden">
 <div class="px-4 py-3 border-b border-dark-600 bg-red-500/10 flex items-center gap-2">
 <span class="text-red-400 font-bold text-sm">ERR 02</span>
-<span class="text-neutral-200 font-semibold text-sm">Indentação errada no YAML multiline</span>
+<span class="text-neutral-200 font-semibold text-sm">Indentaçêo errada no YAML multiline</span>
 </div>
 <div class="p-4 grid sm:grid-cols-2 gap-4">
 <div>
@@ -620,9 +620,9 @@ description: Faz coisas...
 name: meu-skill
 description: Texto longo
 que continua aqui
-sem indentação
+sem indentaçêo
 ---</code></pre>
-<p class="text-xs text-neutral-500 mt-2">Linha sem indentação quebra o YAML multiline — o parser vê um campo novo.</p>
+<p class="text-xs text-neutral-500 mt-2">Linha sem indentaçêo quebra o YAML multiline — o parser vê um campo novo.</p>
 </div>
 <div>
 <div class="text-xs text-emerald-400 font-semibold mb-2">✓ Correto</div>
@@ -630,9 +630,9 @@ sem indentação
 name: meu-skill
 description: Texto longo
   que continua aqui
-  com 2 espaços de indentação
+  com 2 espaços de indentaçêo
 ---</code></pre>
-<p class="text-xs text-neutral-500 mt-2">Linhas de continuação devem ter pelo menos 2 espaços de recuo.</p>
+<p class="text-xs text-neutral-500 mt-2">Linhas de continuaçêo devem ter pelo menos 2 espaços de recuo.</p>
 </div>
 </div>
 </div>
@@ -675,7 +675,7 @@ description: Cria vídeos em PT-BR.
 <li class="flex gap-2"><span class="text-emerald-400">✓</span> Segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> presente após os campos YAML</li>
 <li class="flex gap-2"><span class="text-emerald-400">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded">name</code> igual ao nome da pasta (kebab-case)</li>
 <li class="flex gap-2"><span class="text-emerald-400">✓</span> <code class="text-emerald-300 bg-dark-700 px-1 rounded">description</code> tem pelo menos 3 frases-gatilho concretas</li>
-<li class="flex gap-2"><span class="text-emerald-400">✓</span> Linhas de continuação da description indentadas com 2 espaços</li>
+<li class="flex gap-2"><span class="text-emerald-400">✓</span> Linhas de continuaçêo da description indentadas com 2 espaços</li>
 </ul>
 </div>
 </div>
@@ -710,7 +710,7 @@ description: Cria vídeos em PT-BR.
 </div>
 <div class="flex gap-3 items-start bg-dark-700/40 rounded-lg p-3 border border-dark-600">
 <span class="text-emerald-400 font-bold mt-0.5">✓</span>
-<span class="text-sm text-neutral-300">A <code class="text-emerald-300 bg-dark-700 px-1 rounded">description</code> é o gatilho de ativação — o Claude lê esse campo para decidir quando invocar o skill</span>
+<span class="text-sm text-neutral-300">A <code class="text-emerald-300 bg-dark-700 px-1 rounded">description</code> é o gatilho de ativaçêo — o Claude lê esse campo para decidir quando invocar o skill</span>
 </div>
 <div class="flex gap-3 items-start bg-dark-700/40 rounded-lg p-3 border border-dark-600">
 <span class="text-emerald-400 font-bold mt-0.5">✓</span>
@@ -718,11 +718,11 @@ description: Cria vídeos em PT-BR.
 </div>
 <div class="flex gap-3 items-start bg-dark-700/40 rounded-lg p-3 border border-dark-600">
 <span class="text-emerald-400 font-bold mt-0.5">✓</span>
-<span class="text-sm text-neutral-300">O corpo em Markdown (após o segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code>) é o script de execução que o Claude segue passo a passo</span>
+<span class="text-sm text-neutral-300">O corpo em Markdown (após o segundo <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code>) é o script de execuçêo que o Claude segue passo a passo</span>
 </div>
 <div class="flex gap-3 items-start bg-dark-700/40 rounded-lg p-3 border border-dark-600">
 <span class="text-emerald-400 font-bold mt-0.5">✓</span>
-<span class="text-sm text-neutral-300">Erros comuns: <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> faltando, indentação YAML errada, description vaga sem frases-gatilho</span>
+<span class="text-sm text-neutral-300">Erros comuns: <code class="text-emerald-300 bg-dark-700 px-1 rounded">---</code> faltando, indentaçêo YAML errada, description vaga sem frases-gatilho</span>
 </div>
 </div>
 <!-- próximo módulo -->
@@ -731,15 +731,15 @@ description: Cria vídeos em PT-BR.
 <div class="flex items-start gap-3">
 <div class="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center flex-shrink-0 text-emerald-400 font-bold text-sm">1.3</div>
 <div>
-<div class="font-semibold text-neutral-200">🧠 Divulgação Progressiva</div>
-<p class="text-sm text-neutral-400 mt-1">Aprenda como estruturar o corpo do SKILL.md em camadas de profundidade — do uso básico aos casos avançados — para que o Claude execute o skill com precisão em qualquer contexto.</p>
+<div class="font-semibold text-neutral-200">🧠 Divulgaçêo Progressiva</div>
+<p class="text-sm text-neutral-400 mt-1">Aprenda como estruturar o corpo do SKILL.md em camadas de profundidade — do uso básico aos casos avançados — para que o Claude execute o skill com precisêo em qualquer contexto.</p>
 </div>
 </div>
 </div>
 <!-- CTAs -->
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha 1</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Próximo Módulo: 1.3 Divulgação Progressiva →</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Próximo Módulo: 1.3 Divulgaçêo Progressiva →</a>
 </div>
 </div>
 </section>

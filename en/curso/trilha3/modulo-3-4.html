@@ -232,7 +232,7 @@
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Framework mechanics</div>
 <p class="text-neutral-200">HyperFrames iterates over the active clips on each frame and applies <code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-sm">element.style.opacity = "1"</code> directly in <code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-sm">.clip</code>. Any GSAP animation that tries to <code class="text-red-300 bg-dark-900/60 px-1 rounded text-sm">gsap.to(".clip", {opacity:0})</code> will be overwritten on the next render tick — resulting in a ghost fade that never happens.</p>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — animate the .clip</div>
@@ -370,7 +370,7 @@
 </div>
 <div class="text-xs text-neutral-500 mt-2">Odd-numbered scenes (1,3,5…) → track 1 · Even-numbered scenes (2,4,6…) → track 3 · Captions mirror on tracks 2/4</div>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — same track, edges touching</div>
@@ -450,7 +450,7 @@
 <p class="text-neutral-400 text-sm">HyperFrames inspect calculates the bounding box of all visible elements. Off-canvas decorative elements—even with <code class="text-red-300 bg-dark-900/60 px-1 rounded text-xs">overflow:hidden</code> in the parent — they can leak out and expand the measured bounding box. Result: video rendered with black bars around the edges.</p>
 </div>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — decorative without an attribute</div>
@@ -534,7 +534,7 @@
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Why it fails silently</div>
 <p class="text-neutral-200 text-sm">Chrome headless doesn't report network failures as GSAP or JS errors. The page simply falls back to the fallback font (<code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-xs">sans-serif</code> → Arial/Helvetica). The video renders normally—but with the wrong typography. You might not notice until you watch the final result in high resolution.</p>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — Google Fonts via link</div>
@@ -581,7 +581,7 @@
 <span class="text-2xl flex-shrink-0">💡</span>
 <div>
 <div class="font-semibold text-purple-300 text-sm mb-1">Latin subset covers PT-BR</div>
-<p class="text-neutral-400 text-sm">The subset <code class="text-purple-300 bg-dark-900/60 px-1 rounded text-xs">latin</code> includes all characters used in Brazilian Portuguese (ã, ç, õ, á, é, etc.). You don't need to download the full subset. Use <code class="text-purple-300 bg-dark-900/60 px-1 rounded text-xs">font-display: block</code> to ensure headless Chrome waits for the font before capturing the frame.</p>
+<p class="text-neutral-400 text-sm">The subset <code class="text-purple-300 bg-dark-900/60 px-1 rounded text-xs">latin</code> includes all characters used in Brazilian Portuguese (ê, ç, õ, á, é, etc.). You don't need to download the full subset. Use <code class="text-purple-300 bg-dark-900/60 px-1 rounded text-xs">font-display: block</code> to ensure headless Chrome waits for the font before capturing the frame.</p>
 </div>
 </div>
 <!-- mini-grid conceitos-chave -->
@@ -629,7 +629,7 @@
 <p class="text-neutral-400 text-sm">The pipeline continues without failing. The next step tries to read a file that doesn’t exist. The actual error appears several steps later, making it hard to trace. The flag <code class="text-red-300 bg-dark-900/60 px-1 rounded text-xs">-nostdin</code> fully solves it—and costs nothing in normal environments.</p>
 </div>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — no -nostdin</div>
@@ -714,7 +714,7 @@
 <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Why rendering is frame by frame</div>
 <p class="text-neutral-200 text-sm">The engine captures individual frames by synthetically navigating through the GSAP timeline—it doesn’t play the video in real time. This means that <code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-xs">Date.now()</code> returns different values for each captured frame, <code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-xs">Math.random()</code> is never reproducibly seeded and <code class="text-cyan-300 bg-dark-900/60 px-1 rounded text-xs">fetch()</code> may fail or return different data each time it runs.</p>
 </div>
-<!-- grid problema / correção -->
+<!-- grid problema / correçêo -->
 <div class="grid sm:grid-cols-2 gap-4">
 <div class="bg-red-500/10 rounded-xl border border-red-500/30 p-4">
 <div class="text-red-400 font-bold text-sm mb-3 flex items-center gap-2"><span class="text-lg">✗</span> PROBLEM — nondeterministic fonts</div>

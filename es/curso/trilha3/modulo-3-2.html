@@ -382,7 +382,7 @@
 </div>
 </div>
 <p class="text-neutral-300 mb-5">El sistema usa <strong class="text-purple-400">Sora</strong> para titulares (peso 700–800, escala de video de 72–172px en 16:9), <strong class="text-neutral-100">Inter</strong> para el cuerpo y la interfaz (28–42px), y <strong class="text-cyan-400 mono">JetBrains Mono</strong> para código, URLs y etiquetas técnicas. Las tres fuentes tienen <code class="mono text-xs bg-dark-700 px-1 rounded">.woff2</code> locales: el generador nunca hace solicitudes a una CDN durante la ejecución.</p>
-<!-- Visualização tipográfica -->
+<!-- Visualizaçêo tipográfica -->
 <div class="rounded-xl bg-dark-900 border border-purple-500/30 p-5 mb-5">
 <div class="mb-3">
 <div class="text-xs text-neutral-500 mb-1 mono">Sora 800 · titular 64–172px</div>
@@ -416,7 +416,7 @@
   font-display:block;src:url('./fonts/Inter-400.woff2') format('woff2');}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;
   font-display:block;src:url('./fonts/JetBrainsMono-400.woff2') format('woff2');}
-/* subset: latin — cobre PT-BR: á à â ã é ê í ó ô õ ú ç */</code></pre>
+/* subset: latin — cobre PT-BR: á à â ê é ê í ó ô õ ú ç */</code></pre>
 </div>
 <!-- timeline -->
 <div class="mb-5">
@@ -491,7 +491,7 @@
   &lt;div class="ghost-text"&gt;DARK&lt;/div&gt;
   &lt;!-- grid hairline --&gt;
   &lt;svg class="grid-lines" ...&gt;&lt;/svg&gt;
-  &lt;!-- grão (SVG feTurbulence) --&gt;
+  &lt;!-- grêo (SVG feTurbulence) --&gt;
   &lt;canvas class="grain"&gt;&lt;/canvas&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -568,7 +568,7 @@
 <p class="text-neutral-400 mt-1">Subconjunto latin. @font-face local. Cero CDN al renderizar.</p>
 </div>
 </div>
-<p class="text-neutral-300 mb-5">El script <code class="mono text-xs bg-dark-700 px-1 rounded">fetch-fonts.mjs</code> usa el User-Agent de Chrome 131 para simular el navegador, hace una solicitud a la API de Google Fonts, filtra <strong class="text-purple-400">solo el subset latin</strong> (unicode-range <code class="mono text-xs bg-dark-700 px-1 rounded">U+0000-00FF</code> cubre todo PT-BR: á à â ã é ê í ó ô õ ú ç), descarga los <code class="mono text-xs bg-dark-700 px-1 rounded">.woff2</code> y genera <code class="mono text-xs bg-dark-700 px-1 rounded">assets/fonts/fonts.css</code>.</p>
+<p class="text-neutral-300 mb-5">El script <code class="mono text-xs bg-dark-700 px-1 rounded">fetch-fonts.mjs</code> usa el User-Agent de Chrome 131 para simular el navegador, hace una solicitud a la API de Google Fonts, filtra <strong class="text-purple-400">solo el subset latin</strong> (unicode-range <code class="mono text-xs bg-dark-700 px-1 rounded">U+0000-00FF</code> cubre todo PT-BR: á à â ê é ê í ó ô õ ú ç), descarga los <code class="mono text-xs bg-dark-700 px-1 rounded">.woff2</code> y genera <code class="mono text-xs bg-dark-700 px-1 rounded">assets/fonts/fonts.css</code>.</p>
 <!-- Box dados (blue) -->
 <div class="rounded-xl bg-blue-900/10 border border-blue-500/30 p-4 mb-5">
 <div class="text-blue-400 font-semibold mb-2 text-sm">📊 Archivos generados por fetch-fonts.mjs</div>
@@ -692,7 +692,7 @@
 <div class="text-primary font-semibold mb-1 text-sm">💡 Tip — Movimiento ambiental</div>
 <p class="text-sm text-neutral-300">Toda decoración tiene <strong class="text-amber-400">movimiento ambiental</strong>: entradas de 0.4–0.6s, eases variados, combinando <code class="mono text-xs bg-dark-700 px-1 rounded">transform + opacity</code>, stagger de 0.08–0.14s entre elementos. La regla es: si es decorativo, respira. Si es contenido, aparece una vez y se detiene.</p>
 </div>
-<!-- timeline de composição de cena -->
+<!-- timeline de composiçêo de cena -->
 <div class="mb-5">
 <div class="text-sm font-semibold text-neutral-300 mb-3">Anatomía de una escena (8–10 elementos)</div>
 <div class="space-y-2">
