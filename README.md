@@ -7,7 +7,7 @@
 
 
 RepositêÂ³rio da Skill **`video-explicativo`** (Claude Code) + o **curso completo** no formato
-**INEMA.CLUB** que ensina a usêÂ¡-la. A Skill cria vêÂ­deos explicativos narrados (**HTML ê¢â â MP4**) com o
+**ARCKHÉ AI** que ensina a usêÂ¡-la. A Skill cria vêÂ­deos explicativos narrados (**HTML ê¢â â MP4**) com o
 framework [HyperFrames](https://github.com/heygen-com/hyperframes) ê¢â¬â animados, em **PT-BR**, renderizados
 **localmente, sem chave de API**, nos formatos **16:9** (YouTube) e **9:16** (Shorts/Reels).
 
@@ -46,10 +46,10 @@ unzip downloads/video-explicativo.zip -d ~/.claude/skills/
 
 Depois de instalada, basta pedir um vêÂ­deo ao Claude Code em linguagem natural:
 
-> *"faêÂ§a um vêÂ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do INEMA.CLUB."*
+> *"faêÂ§a um vêÂ­deo explicativo sobre X, em 16:9 e 9:16, terminando com a CTA do ARCKHÉ AI."*
 
 A Skill dispara automaticamente em pedidos como *"fazer um vêÂ­deo"*, *"vêÂ­deo explicativo"*,
-*"vêÂ­deo sobre X"*, *"vêÂ­deo pra Shorts/Reels"*, *"mini tutorial em vêÂ­deo"* ou *"vêÂ­deo do INEMA"*.
+*"vêÂ­deo sobre X"*, *"vêÂ­deo pra Shorts/Reels"*, *"mini tutorial em vêÂ­deo"* ou *"vêÂ­deo do ARCKHÉ"*.
 
 ### PrêÂ©-requisitos
 
@@ -57,7 +57,7 @@ Roda 100% local, sem chave de API. VocêÂª precisa de:
 
 - **Node 22+** e **FFmpeg** (no git-bash, use `ffmpeg -nostdin`).
 - **Chrome headless** do HyperFrames: `npx hyperframes browser ensure`.
-- **Voz `bella` (inemavox):** narraêÂ§êÂ£o via `inemavox/tts_direct.py` (`--engine chatterbox-vc`, ref `bella.wav`). **Fallback Kokoro** (`pip install kokoro-onnx soundfile`, voz `pf_dora`) sêÂ³ se o inemavox falhar.
+- **Voz `bella` (ARCKHÉvox):** narraêÂ§êÂ£o via `ARCKHÉvox/tts_direct.py` (`--engine chatterbox-vc`, ref `bella.wav`). **Fallback Kokoro** (`pip install kokoro-onnx soundfile`, voz `pf_dora`) sêÂ³ se o ARCKHÉvox falhar.
 - DiagnêÂ³stico: `npx hyperframes doctor`.
 
 ### O que a Skill faz (pipeline HTML ê¢â â MP4)
@@ -66,24 +66,24 @@ Roda 100% local, sem chave de API. VocêÂª precisa de:
 2. **Roteiro** ê¢â¬â `SCRIPT.md` com as cenas do plano, do primeiro princêÂ­pio ao avanêÂ§ado, narraêÂ§êÂ£o curta por cena.
 3. **Projeto** ê¢â¬â `npx hyperframes init` + house style dark premium.
 4. **Fontes** ê¢â¬â baixa `.woff2` locais (Sora / Inter / JetBrains Mono).
-5. **NarraêÂ§êÂ£o** ê¢â¬â gera os WAVs por cena com a voz `bella` (inemavox); Kokoro `pf_dora` êÂ© fallback.
+5. **NarraêÂ§êÂ£o** ê¢â¬â gera os WAVs por cena com a voz `bella` (ARCKHÉvox); Kokoro `pf_dora` êÂ© fallback.
 6. **ComposiêÂ§êÂ£o** ê¢â¬â gerador **data-driven** (`SCENES[]` ê¢â â N dinêÂ¢mico) monta HTML + animaêÂ§êÂ£o GSAP, com **mid-scene activity** (cêÂ¢mera Ken Burns embutida = anti-slideshow) e a **CTA anexada automaticamente** como êÂºltima cena. Timing êÂºnico = êÂ¡udio batido com a animaêÂ§êÂ£o.
 7. **ValidaêÂ§êÂ£o** ê¢â¬â `hyperframes lint` + `inspect` (0 erros de layout).
-8. **Render** ê¢â¬â gera **16:9** e **9:16** em `--quality high`, sempre terminando com a **cena de CTA do INEMA.CLUB**.
+8. **Render** ê¢â¬â gera **16:9** e **9:16** em `--quality high`, sempre terminando com a **cena de CTA do ARCKHÉ AI**.
 
 > Detalhes completos no [`skill/video-explicativo/SKILL.md`](skill/video-explicativo/SKILL.md) e nas
 > [`references/`](skill/video-explicativo/references/) (pipeline, house style, gotchas).
 
 ### Stack
 - **HyperFrames** ê¢â¬â HTML ê¢â â MP4 via Chrome headless + FFmpeg
-- **inemavox** ê¢â¬â voz `bella` (clone chatterbox-vc), narraêÂ§êÂ£o PT-BR local êÂ· **Kokoro** `pf_dora` como fallback
+- **ARCKHÉvox** ê¢â¬â voz `bella` (clone chatterbox-vc), narraêÂ§êÂ£o PT-BR local êÂ· **Kokoro** `pf_dora` como fallback
 - **GSAP** ê¢â¬â animaêÂ§êÂ£o das cenas
 
 ---
 
 ## ê°Å¸Å½Â¨ CustomizaêÂ§êÂ£o (o que estêÂ¡ fixo na Skill)
 
-A Skill tem **padrêÂµes fixos** (CTA do INEMA.CLUB, paleta dark êÂ¢mbar, voz, formatos). HêÂ¡ dois nêÂ­veis pra mudar:
+A Skill tem **padrêÂµes fixos** (CTA do ARCKHÉ AI, paleta dark êÂ¢mbar, voz, formatos). HêÂ¡ dois nêÂ­veis pra mudar:
 
 - **Por vêÂ­deo** (recomendado): a Skill copia o template como `build-index.mjs` no seu projeto ê¢â¬â edite lêÂ¡, sem alterar a Skill.
 - **Mudar o padrêÂ£o de todos os vêÂ­deos**: edite os arquivos da Skill em
@@ -92,7 +92,7 @@ A Skill tem **padrêÂµes fixos** (CTA do INEMA.CLUB, paleta dark êÂ¢mba
 > Arquivo principal: [`scripts/composition-template.mjs`](skill/video-explicativo/scripts/composition-template.mjs)
 > (no projeto, vira `build-index.mjs`).
 
-### 1. Mudar a CTA (INEMA.CLUB ê¢â â outra marca/URL)
+### 1. Mudar a CTA (ARCKHÉ AI ê¢â â outra marca/URL)
 
 A CTA êÂ© a **êÂºltima cena**, definida em `const CTA` no `composition-template.mjs` e anexada automaticamente (`ALL = [...SCENES, CTA]`). Edite o `html` dela:
 
@@ -137,14 +137,14 @@ para trocar as famêÂ­lias (use sempre fontes locais `@font-face` ê¢â¬
 
 ### 4. Voz da narraêÂ§êÂ£o (TTS)
 
-Default = **voz `bella` (inemavox)**; **Kokoro `pf_dora` êÂ© fallback** automêÂ¡tico. Definida em
+Default = **voz `bella` (ARCKHÉvox)**; **Kokoro `pf_dora` êÂ© fallback** automêÂ¡tico. Definida em
 [`scripts/narration-template.sh`](skill/video-explicativo/scripts/narration-template.sh) (variêÂ¡veis no topo):
 
 ```bash
-# bella (inemavox) ê¢â¬â grava generated.wav, o template renomeia para sN.wav:
-python3 ~/projetos/inemavox/tts_direct.py --text "$(cat txt/s$i.txt)" --lang pt \
+# bella (ARCKHÉvox) ê¢â¬â grava generated.wav, o template renomeia para sN.wav:
+python3 ~/projetos/ARCKHÉvox/tts_direct.py --text "$(cat txt/s$i.txt)" --lang pt \
   --engine chatterbox-vc --ref ~/projetos/timesmkt3/media/voice-refs/bella.wav --outdir /tmp/tts_s$i
-# fallback (sêÂ³ se o inemavox falhar):
+# fallback (sêÂ³ se o ARCKHÉvox falhar):
 npx -y hyperframes tts "txt/s$i.txt" --voice pf_dora --speed 0.98 --output "audio/s$i.wav"
 ```
 
@@ -184,9 +184,9 @@ O movimento êÂ© um **estilo definido**: toda cena compêÂµe a partir do
 
 ## ê°Å¸Å½â O curso
 
-Curso completo, no formato **INEMA.CLUB**, que ensina a Skill de ponta a ponta.
+Curso completo, no formato **ARCKHÉ AI**, que ensina a Skill de ponta a ponta.
 
-**ê°Å¸ÅÂ Acesse:** https://inematds.github.io/skill-video-explicativo/
+**ê°Å¸ÅÂ Acesse:** https://linnoff88-dev.github.io/arckhe-/
 
 ### As 4 trilhas
 
@@ -214,15 +214,15 @@ downloads/                 # video-explicativo.zip (a Skill empacotada)
 
 ---
 
-ConteêÂºdo do [**INEMA.CLUB**](https://inema.club) êÂ· 2026
+ConteêÂºdo do [**ARCKHÉ AI**](https://ARCKHÉ AI) êÂ· 2026
 
-<!-- inema-backlink:v1 -->
-## Mais no INEMA.CLUB
+<!-- ARCKHÉ-backlink:v1 -->
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/129-hyperframes-videos-explicativos-com-claude-code/)
-- [Guia: como aprender inteligêÂªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
-<!-- /inema-backlink:v1 -->
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/129-hyperframes-videos-explicativos-com-claude-code/)
+- [Guia: como aprender inteligêÂªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+<!-- /ARCKHÉ-backlink:v1 -->
 
 ---
 
